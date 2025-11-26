@@ -68,7 +68,7 @@
     <section id="about" class="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>I’m a statistician and public health researcher from Bangladesh, currently working as a Senior Research Assistant at icddr,b. I completed both my bachelor’s and master’s degrees in Statistics from Shahjalal University of Science and Technology (SUST). My research focuses on global health, with particular interests in maternal and reproductive health, mental health, multimorbidity, and applying statistical and machine learning methods in low-resource settings.</p>
+            <p>This is Toukir, a statistician and public health researcher from Bangladesh. I have completed both my bachelor’s and master’s degrees in Statistics from Shahjalal University of Science and Technology (SUST). My research focuses on global health, with particular interests in maternal and reproductive health, mental health, multimorbidity, and applying statistical and machine learning methods in low-resource settings.</p>
             <p>Currently serving as a Senior Research Assistant at the International Centre for Diarrhoeal Disease Research, Bangladesh (icddr,b), I contribute to high-impact research projects and manuscript development for peer-reviewed journals. I have a strong track record of publications in prestigious journals, including The Lancet, BMC, Depression and Anxiety, Journal of Global Healthand Springer Nature publications.</p>
             <p>My expertise spans statistical analysis, epidemiological research methods, data management, and research protocol development. I am passionate about bridging the gap between academic research and practical health interventions in resource-limited settings.</p>
         </div>
@@ -185,177 +185,508 @@
         </div>
     </section>
 
-    <!-- Publications Section -->
-    <section id="publications" class="publications">
-        <div class="container">
-            <h2>Publications</h2>
-            <div class="publications-controls">
-                <div class="search-box">
-                    <input type="text" id="publicationSearch" placeholder="Search publications by title or journal...">
-                    <svg class="search-icon" viewBox="0 0 24 24"><path d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3.5-9H7V4h8v9z"/></svg>
-                </div>
-                <div class="filter-buttons">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="first-author">First Author</button>
-                    <button class="filter-btn" data-filter="co-author">Co-Author</button>
-                </div>
+   <!-- Publications Section -->
+<section id="publications" class="publications">
+    <div class="container">
+        <h2>Publications</h2>
+        <div class="publications-controls">
+            <div class="search-box">
+                <input type="text" id="publicationSearch" placeholder="Search publications by title or journal...">
+                <svg class="search-icon" viewBox="0 0 24 24">
+                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                </svg>
             </div>
-
-            <div id="publicationsList" class="publications-list">
-                <!-- Publications will be loaded here -->
-            </div>
-
-            <!-- Fallback Publications (if Google Scholar API is unavailable) -->
-            <div id="fallbackPublications" class="publications-list" style="display: none;">
-                <div class="publication-item">
-                    <div class="publication-header">
-                        <h3>Exploring mental health disparities in Mozambique: Depression and anxiety symptoms among reproductive-aged women using data from Mozambique Demographic and Health Survey 2022–23</h3>
-                        <span class="pub-year">2025</span>
-                    </div>
-                    <p class="pub-authors">Syed Toukir Ahmed Noor (1st and corresponding author)</p>
-                    <p class="pub-journal"><strong>Global Epidemiology</strong></p>
-                    <p class="pub-doi">DOI: 10.1016/j.gloepi.2025.100223</p>
-                    <div class="pub-footer">
-                        <span class="citation-count">Citations: —</span>
-                        <a href="https://doi.org/10.1016/j.gloepi.2025.100223" target="_blank" class="pub-link">View Paper</a>
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-header">
-                        <h3>The association of cyberbullying with major depressive disorders among Bangladeshi female adolescents: findings from the Bangladesh adolescent health and wellbeing survey 2019-20</h3>
-                        <span class="pub-year">2025</span>
-                    </div>
-                    <p class="pub-authors">Syed Toukir Ahmed Noor (1st and corresponding author)</p>
-                    <p class="pub-journal"><strong>BMC Psychiatry</strong></p>
-                    <p class="pub-doi">DOI: 10.1186/s12888-025-07234-z</p>
-                    <div class="pub-footer">
-                        <span class="citation-count">Citations: —</span>
-                        <a href="https://doi.org/10.1186/s12888-025-07234-z" target="_blank" class="pub-link">View Paper</a>
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-header">
-                        <h3>Prevalence, Determinants, and Wealth-related Inequality of Anxiety and Depression Symptoms Among Reproductive-Aged Women (15-49 years) in Nepal: An Analysis of Nationally Representative Nepal Demographic and Health Survey Data 2022</h3>
-                        <span class="pub-year">2025</span>
-                    </div>
-                    <p class="pub-authors">Syed Toukir Ahmed Noor (1st and corresponding author)</p>
-                    <p class="pub-journal"><strong>Depression and Anxiety</strong></p>
-                    <p class="pub-doi">DOI: 10.1155/da/9942669</p>
-                    <div class="pub-footer">
-                        <span class="citation-count">Citations: —</span>
-                        <a href="https://doi.org/10.1155/da/9942669" target="_blank" class="pub-link">View Paper</a>
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-header">
-                        <h3>Determinants of Multimorbidity in a Low-resource Setting: A Population-based Cross-sectional Study in Bangladesh</h3>
-                        <span class="pub-year">2025</span>
-                    </div>
-                    <p class="pub-authors">Syed Toukir Ahmed Noor (1st author)</p>
-                    <p class="pub-journal"><strong>Global Health, Epidemiology and Genomics</strong></p>
-                    <p class="pub-doi">DOI: 10.1155/ghe3/2909466</p>
-                    <div class="pub-footer">
-                        <span class="citation-count">Citations: —</span>
-                        <a href="https://doi.org/10.1155/ghe3/2909466" target="_blank" class="pub-link">View Paper</a>
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-header">
-                        <h3>Anxiety and depression among reproductive-aged women in Bangladesh: burden, determinants, and care-seeking practices based on a nationally representative demographic and health survey</h3>
-                        <span class="pub-year">2025</span>
-                    </div>
-                    <p class="pub-authors">Syed Toukir Ahmed Noor (Co-author)</p>
-                    <p class="pub-journal"><strong>Archives of Women's Mental Health</strong></p>
-                    <p class="pub-doi">DOI: 10.1007/s00737-025-01564-3</p>
-                    <div class="pub-footer">
-                        <span class="citation-count">Citations: —</span>
-                        <a href="https://doi.org/10.1007/s00737-025-01564-3" target="_blank" class="pub-link">View Paper</a>
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-header">
-                        <h3>Validation of modified COVID-19 Phobia Scale (MC19P-SE) to examine the relationships between corona anxiety and COVID-19 symptoms: A case-control study</h3>
-                        <span class="pub-year">2025</span>
-                    </div>
-                    <p class="pub-authors">Syed Toukir Ahmed Noor (Shared 1st author)</p>
-                    <p class="pub-journal"><strong>Journal of Mood & Anxiety Disorders</strong></p>
-                    <p class="pub-doi">DOI: 10.1016/j.xjmad.2025.100108</p>
-                    <div class="pub-footer">
-                        <span class="citation-count">Citations: —</span>
-                        <a href="https://doi.org/10.1016/j.xjmad.2025.100108" target="_blank" class="pub-link">View Paper</a>
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-header">
-                        <h3>The proper application of logistic regression model in complex survey data: a systematic review</h3>
-                        <span class="pub-year">2025</span>
-                    </div>
-                    <p class="pub-authors">Syed Toukir Ahmed Noor (Senior Co-author)</p>
-                    <p class="pub-journal"><strong>BMC Medical Research Methodology</strong></p>
-                    <p class="pub-doi">DOI: 10.1186/s12874-024-02454-5</p>
-                    <div class="pub-footer">
-                        <span class="citation-count">Citations: —</span>
-                        <a href="https://doi.org/10.1186/s12874-024-02454-5" target="_blank" class="pub-link">View Paper</a>
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-header">
-                        <h3>Assessing health systems' capacities to provide post-abortion care: insights from seven low- and middle-income countries</h3>
-                        <span class="pub-year">2025</span>
-                    </div>
-                    <p class="pub-authors">Syed Toukir Ahmed Noor (Co-author)</p>
-                    <p class="pub-journal"><strong>Journal of Global Health</strong></p>
-                    <p class="pub-doi">DOI: 10.7189/jogh.15.04020</p>
-                    <div class="pub-footer">
-                        <span class="citation-count">Citations: —</span>
-                        <a href="https://doi.org/10.7189/jogh.15.04020" target="_blank" class="pub-link">View Paper</a>
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-header">
-                        <h3>Burden of disease scenarios for 204 countries and territories, 2022–2050: a forecasting analysis for the Global Burden of Disease Study 2021</h3>
-                        <span class="pub-year">2024</span>
-                    </div>
-                    <p class="pub-authors">Syed Toukir Ahmed Noor (Collaborator)</p>
-                    <p class="pub-journal"><strong>The Lancet</strong></p>
-                    <p class="pub-doi">DOI: 10.1016/s0140-6736(24)00685-8</p>
-                    <div class="pub-footer">
-                        <span class="citation-count">Citations: —</span>
-                        <a href="https://doi.org/10.1016/s0140-6736(24)00685-8" target="_blank" class="pub-link">View Paper</a>
-                    </div>
-                </div>
-
-                <div class="publication-item">
-                    <div class="publication-header">
-                        <h3>Association between Global Monkeypox Cases and Meteorological Factors</h3>
-                        <span class="pub-year">2022</span>
-                    </div>
-                    <p class="pub-authors">Syed Toukir Ahmed Noor (Co-author)</p>
-                    <p class="pub-journal"><strong>International Journal of Environmental Research and Public Health</strong></p>
-                    <p class="pub-doi">DOI: 10.3390/ijerph192315638</p>
-                    <div class="pub-footer">
-                        <span class="citation-count">Citations: —</span>
-                        <a href="https://doi.org/10.3390/ijerph192315638" target="_blank" class="pub-link">View Paper</a>
-                    </div>
-                </div>
-            </div>
-
-            <div id="loadingIndicator" style="display: none; text-align: center; padding: 20px;">
-                <div class="spinner"></div>
-                <p>Loading more publications...</p>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Publications</button>
+                <button class="filter-btn" data-filter="first-author">1st Author</button>
+                <button class="filter-btn" data-filter="co-author">Co-author</button>
+                <button class="filter-btn" data-filter="gbd">GBD Collaboration</button>
             </div>
         </div>
-    </section>
 
-    <!-- Training Section -->
+        <div id="publicationsList" class="publications-list">
+            <!-- 1st Author Publications -->
+            <div class="publication-item" data-category="first-author">
+                <div class="publication-header">
+                    <h3>Exploring mental health disparities in Mozambique: Depression and anxiety symptoms among reproductive-aged women using data from Mozambique Demographic and Health Survey 2022–23</h3>
+                    <span class="pub-year">2025</span>
+                </div>
+                <p class="pub-authors"><strong>Noor STA</strong>, Siddique S, Das O, Yeasar S, Islam RB</p>
+                <p class="pub-journal"><strong>Global Epidemiology</strong></p>
+                <p class="pub-doi">DOI: 10.1016/j.gloepi.2025.100223</p>
+                <div class="pub-footer">
+                    <span class="pub-badge first-author">1st Author</span>
+                    <a href="https://doi.org/10.1016/j.gloepi.2025.100223" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="first-author">
+                <div class="publication-header">
+                    <h3>The association of cyberbullying with major depressive disorders among Bangladeshi female adolescents: findings from the Bangladesh adolescent health and wellbeing survey 2019-20</h3>
+                    <span class="pub-year">2025</span>
+                </div>
+                <p class="pub-authors"><strong>Noor STA</strong>, Islam MF, Hossain MS, Islam RB, Banik R, Shiblee SI, Nasrullah SM, Raza S</p>
+                <p class="pub-journal"><strong>BMC Psychiatry</strong></p>
+                <p class="pub-doi">DOI: 10.1186/s12888-025-07234-z</p>
+                <div class="pub-footer">
+                    <span class="pub-badge first-author">1st Author</span>
+                    <a href="https://doi.org/10.1186/s12888-025-07234-z" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="first-author">
+                <div class="publication-header">
+                    <h3>Prevalence, Determinants, and Wealth-related Inequality of Anxiety and Depression Symptoms Among Reproductive-Aged Women (15-49 years) in Nepal: An Analysis of Nationally Representative Nepal Demographic and Health Survey Data 2022</h3>
+                    <span class="pub-year">2025</span>
+                </div>
+                <p class="pub-authors"><strong>Noor STA</strong>, Yeasar S, Siddique S, Banik R, Raza S</p>
+                <p class="pub-journal"><strong>Depression and Anxiety</strong></p>
+                <p class="pub-doi">DOI: 10.1155/da/9942669</p>
+                <div class="pub-footer">
+                    <span class="pub-badge first-author">1st Author</span>
+                    <a href="https://doi.org/10.1155/da/9942669" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="first-author">
+                <div class="publication-header">
+                    <h3>Determinants of Multimorbidity in a Low-resource Setting: A Population-based Cross-sectional Study in Bangladesh</h3>
+                    <span class="pub-year">2025</span>
+                </div>
+                <p class="pub-authors"><strong>Noor STA</strong>, Kawsar LA, Bhuia MR</p>
+                <p class="pub-journal"><strong>Global Health, Epidemiology and Genomics</strong></p>
+                <p class="pub-doi">DOI: 10.1155/ghe3/2909466</p>
+                <div class="pub-footer">
+                    <span class="pub-badge first-author">1st Author</span>
+                    <a href="https://doi.org/10.1155/ghe3/2909466" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="first-author">
+                <div class="publication-header">
+                    <h3>Exploring Factors Influencing Wealth-Related Disparities in Institutional Delivery: A Decomposition Analysis Using Bangladesh Multiple Indicator Cluster Survey (MICS) 2019</h3>
+                    <span class="pub-year">2025</span>
+                </div>
+                <p class="pub-authors"><strong>Noor STA</strong>, Shil P, Talukdar A, Aktar S, Uddin MJ</p>
+                <p class="pub-journal"><strong>Public Health Challenges</strong></p>
+                <p class="pub-doi">DOI: 10.1002/puh2.70066</p>
+                <div class="pub-footer">
+                    <span class="pub-badge first-author">1st Author</span>
+                    <a href="https://doi.org/10.1002/puh2.70066" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="first-author">
+                <div class="publication-header">
+                    <h3>Validation of modified COVID-19 Phobia Scale (MC19P-SE) to examine the relationships between corona anxiety and COVID-19 symptoms: A case-control study</h3>
+                    <span class="pub-year">2025</span>
+                </div>
+                <p class="pub-authors">Kawsar LA, <strong>Noor STA</strong>, Islam MA, Bhuia MR</p>
+                <p class="pub-journal"><strong>Journal of Mood & Anxiety Disorders</strong></p>
+                <p class="pub-doi">DOI: 10.1016/j.xjmad.2025.100108</p>
+                <div class="pub-footer">
+                    <span class="pub-badge shared-first">Shared 1st Author</span>
+                    <a href="https://doi.org/10.1016/j.xjmad.2025.100108" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <!-- Co-author Publications -->
+            <div class="publication-item" data-category="co-author">
+                <div class="publication-header">
+                    <h3>Anxiety and depression among reproductive-aged women in Bangladesh: burden, determinants, and care-seeking practices based on a nationally representative demographic and health survey</h3>
+                    <span class="pub-year">2025</span>
+                </div>
+                <p class="pub-authors">Raza S, Banik R, <strong>Noor STA</strong>, Sayeed A, Saha A, Jahan E, Ashiquzzaman, Siddique MAB, Ahmed A, Rahman AE</p>
+                <p class="pub-journal"><strong>Archives of Women's Mental Health</strong></p>
+                <p class="pub-doi">DOI: 10.1007/s00737-025-01564-3</p>
+                <div class="pub-footer">
+                    <span class="pub-badge co-author">Co-author</span>
+                    <a href="https://doi.org/10.1007/s00737-025-01564-3" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="co-author">
+                <div class="publication-header">
+                    <h3>The proper application of logistic regression model in complex survey data: a systematic review</h3>
+                    <span class="pub-year">2025</span>
+                </div>
+                <p class="pub-authors">Dey D, Haque MS, Islam MM, Aishi UI, Shammy SS, Mayen MSA, <strong>Noor STA</strong>, Uddin MJ</p>
+                <p class="pub-journal"><strong>BMC Medical Research Methodology</strong></p>
+                <p class="pub-doi">DOI: 10.1186/s12874-024-02454-5</p>
+                <div class="pub-footer">
+                    <span class="pub-badge senior-author">Senior Author</span>
+                    <a href="https://doi.org/10.1186/s12874-024-02454-5" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="co-author">
+                <div class="publication-header">
+                    <h3>Assessing health systems' capacities to provide post-abortion care: insights from seven low- and middle-income countries</h3>
+                    <span class="pub-year">2025</span>
+                </div>
+                <p class="pub-authors">Raza S, Banik R, <strong>Noor STA</strong>, Jahan E, Sayeed A, Huq N, El Arifeen S, Ahmed A, Rahman AE</p>
+                <p class="pub-journal"><strong>Journal of Global Health</strong></p>
+                <p class="pub-doi">DOI: 10.7189/jogh.15.04020</p>
+                <div class="pub-footer">
+                    <span class="pub-badge co-author">Co-author</span>
+                    <a href="https://doi.org/10.7189/jogh.15.04020" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="co-author">
+                <div class="publication-header">
+                    <h3>Assessing changes in the availability and readiness of health facilities to provide modern family planning services in Bangladesh: Insights from Bangladesh Health Facility Surveys, 2014 and 2017</h3>
+                    <span class="pub-year">2025</span>
+                </div>
+                <p class="pub-authors">Banik R, <strong>Noor STA</strong>, Siddique AB, Mayen MSA, Saha A, Ashiquzzaman, et al.</p>
+                <p class="pub-journal"><strong>PLoS One</strong></p>
+                <p class="pub-doi">DOI: 10.1371/journal.pone.0334520</p>
+                <div class="pub-footer">
+                    <span class="pub-badge co-author">Co-author</span>
+                    <a href="https://doi.org/10.1371/journal.pone.0334520" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="co-author">
+                <div class="publication-header">
+                    <h3>Association between Global Monkeypox Cases and Meteorological Factors</h3>
+                    <span class="pub-year">2022</span>
+                </div>
+                <p class="pub-authors">Islam MA, Sangkham S, Tiwari A, Vadiati M, Hasan MN, <strong>Noor STA</strong>, Mumin J, Bhattacharya P, Sherchan SP</p>
+                <p class="pub-journal"><strong>International Journal of Environmental Research and Public Health</strong></p>
+                <p class="pub-doi">DOI: 10.3390/ijerph192315638</p>
+                <div class="pub-footer">
+                    <span class="pub-badge co-author">Co-author</span>
+                    <a href="https://doi.org/10.3390/ijerph192315638" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="co-author">
+                <div class="publication-header">
+                    <h3>An Estimation of Five-decade Long Monkeypox Case Fatality Rate: Systematic Review and Meta-analysis</h3>
+                    <span class="pub-year">2022</span>
+                </div>
+                <p class="pub-authors">Islam MA, Ahammed T, <strong>Noor STA</strong>, Hasan MN, Hoque MN, Tiwari A, Harapan H, Dhama K, Islam T, Bhattacharya P</p>
+                <p class="pub-journal"><strong>Journal of Pure and Applied Microbiology</strong></p>
+                <p class="pub-doi">DOI: 10.22207/JPAM.16.SPL1.16</p>
+                <div class="pub-footer">
+                    <span class="pub-badge shared-first">Shared 1st Author</span>
+                    <a href="https://doi.org/10.22207/JPAM.16.SPL1.16" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <!-- GBD Collaboration Publications -->
+            <div class="publication-item" data-category="gbd">
+                <div class="publication-header">
+                    <h3>Burden of 375 diseases and injuries, risk-attributable burden of 88 risk factors, and healthy life expectancy in 204 countries and territories, including 660 subnational locations, 1990-2023: a systematic analysis for the Global Burden of Disease Study 2023</h3>
+                    <span class="pub-year">2025</span>
+                </div>
+                <p class="pub-authors">GBD 2023 Disease and Injury and Risk Factor Collaborators</p>
+                <p class="pub-journal"><strong>The Lancet</strong></p>
+                <p class="pub-doi">DOI: 10.1016/S0140-6736(25)01637-X</p>
+                <div class="pub-footer">
+                    <span class="pub-badge gbd">GBD Collaborator</span>
+                    <a href="https://doi.org/10.1016/S0140-6736(25)01637-X" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="gbd">
+                <div class="publication-header">
+                    <h3>The global, regional, and national burden of cancer, 1990-2023, with forecasts to 2050: a systematic analysis for the Global Burden of Disease Study 2023</h3>
+                    <span class="pub-year">2025</span>
+                </div>
+                <p class="pub-authors">GBD 2023 Cancer Collaborators</p>
+                <p class="pub-journal"><strong>The Lancet</strong></p>
+                <p class="pub-doi">DOI: 10.1016/S0140-6736(25)01635-6</p>
+                <div class="pub-footer">
+                    <span class="pub-badge gbd">GBD Collaborator</span>
+                    <a href="https://doi.org/10.1016/S0140-6736(25)01635-6" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="gbd">
+                <div class="publication-header">
+                    <h3>Global age-sex-specific all-cause mortality and life expectancy estimates for 204 countries and territories and 660 subnational locations, 1950-2023: a demographic analysis for the Global Burden of Disease Study 2023</h3>
+                    <span class="pub-year">2025</span>
+                </div>
+                <p class="pub-authors">GBD 2023 Demographics Collaborators</p>
+                <p class="pub-journal"><strong>The Lancet</strong></p>
+                <p class="pub-doi">DOI: 10.1016/S0140-6736(25)01330-3</p>
+                <div class="pub-footer">
+                    <span class="pub-badge gbd">GBD Collaborator</span>
+                    <a href="https://doi.org/10.1016/S0140-6736(25)01330-3" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="gbd">
+                <div class="publication-header">
+                    <h3>Global burden of 292 causes of death in 204 countries and territories and 660 subnational locations, 1990-2023: a systematic analysis for the Global Burden of Disease Study 2023</h3>
+                    <span class="pub-year">2025</span>
+                </div>
+                <p class="pub-authors">GBD 2023 Causes of Death Collaborators</p>
+                <p class="pub-journal"><strong>The Lancet</strong></p>
+                <p class="pub-doi">DOI: 10.1016/S0140-6736(25)01917-8</p>
+                <div class="pub-footer">
+                    <span class="pub-badge gbd">GBD Collaborator</span>
+                    <a href="https://doi.org/10.1016/S0140-6736(25)01917-8" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="gbd">
+                <div class="publication-header">
+                    <h3>Global, regional, and national trends in routine childhood vaccination coverage from 1980 to 2023 with forecasts to 2030: a systematic analysis for the Global Burden of Disease Study 2023</h3>
+                    <span class="pub-year">2025</span>
+                </div>
+                <p class="pub-authors">GBD 2023 Vaccine Coverage Collaborators</p>
+                <p class="pub-journal"><strong>The Lancet</strong></p>
+                <p class="pub-doi">DOI: 10.1016/S0140-6736(25)01037-2</p>
+                <div class="pub-footer">
+                    <span class="pub-badge gbd">GBD Collaborator</span>
+                    <a href="https://doi.org/10.1016/S0140-6736(25)01037-2" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="gbd">
+                <div class="publication-header">
+                    <h3>Global, regional, and national prevalence of child and adolescent overweight and obesity, 1990-2021, with forecasts to 2050: a forecasting study for the Global Burden of Disease Study 2021</h3>
+                    <span class="pub-year">2025</span>
+                </div>
+                <p class="pub-authors">GBD 2021 Adolescent BMI Collaborators</p>
+                <p class="pub-journal"><strong>The Lancet</strong></p>
+                <p class="pub-doi">DOI: 10.1016/S0140-6736(25)00397-6</p>
+                <div class="pub-footer">
+                    <span class="pub-badge gbd">GBD Collaborator</span>
+                    <a href="https://doi.org/10.1016/S0140-6736(25)00397-6" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="gbd">
+                <div class="publication-header">
+                    <h3>Global, regional, and national prevalence of adult overweight and obesity, 1990-2021, with forecasts to 2050: a forecasting study for the Global Burden of Disease Study 2021</h3>
+                    <span class="pub-year">2025</span>
+                </div>
+                <p class="pub-authors">GBD 2021 Adult BMI Collaborators</p>
+                <p class="pub-journal"><strong>The Lancet</strong></p>
+                <p class="pub-doi">DOI: 10.1016/S0140-6736(25)00355-1</p>
+                <div class="pub-footer">
+                    <span class="pub-badge gbd">GBD Collaborator</span>
+                    <a href="https://doi.org/10.1016/S0140-6736(25)00355-1" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="gbd">
+                <div class="publication-header">
+                    <h3>Global burden of vision impairment due to age-related macular degeneration, 1990-2021, with forecasts to 2050: a systematic analysis for the Global Burden of Disease Study 2021</h3>
+                    <span class="pub-year">2025</span>
+                </div>
+                <p class="pub-authors">GBD 2021 Global AMD Collaborators</p>
+                <p class="pub-journal"><strong>The Lancet Global Health</strong></p>
+                <p class="pub-doi">DOI: 10.1016/S2214-109X(25)00143-3</p>
+                <div class="pub-footer">
+                    <span class="pub-badge gbd">GBD Collaborator</span>
+                    <a href="https://doi.org/10.1016/S2214-109X(25)00143-3" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="gbd">
+                <div class="publication-header">
+                    <h3>Global, regional, and national sepsis incidence and mortality, 1990-2021: a systematic analysis</h3>
+                    <span class="pub-year">2025</span>
+                </div>
+                <p class="pub-authors">GBD 2021 Global Sepsis Collaborators</p>
+                <p class="pub-journal"><strong>The Lancet Global Health</strong></p>
+                <p class="pub-doi">DOI: 10.1016/S2214-109X(25)00356-0</p>
+                <div class="pub-footer">
+                    <span class="pub-badge gbd">GBD Collaborator</span>
+                    <a href="https://doi.org/10.1016/S2214-109X(25)00356-0" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="gbd">
+                <div class="publication-header">
+                    <h3>Global, regional, and national burden of asthma and atopic dermatitis, 1990-2021, and projections to 2050: a systematic analysis of the Global Burden of Disease Study 2021</h3>
+                    <span class="pub-year">2025</span>
+                </div>
+                <p class="pub-authors">GBD 2021 Asthma and Allergic Diseases Collaborators</p>
+                <p class="pub-journal"><strong>The Lancet Respiratory Medicine</strong></p>
+                <p class="pub-doi">DOI: 10.1016/S2213-2600(25)00003-7</p>
+                <div class="pub-footer">
+                    <span class="pub-badge gbd">GBD Collaborator</span>
+                    <a href="https://doi.org/10.1016/S2213-2600(25)00003-7" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="gbd">
+                <div class="publication-header">
+                    <h3>Asthma and Atopic Dermatitis in Asia, 1990-2021: The Global Burden of Disease Study 2021</h3>
+                    <span class="pub-year">2025</span>
+                </div>
+                <p class="pub-authors">GBD 2021 Asia Allergic Disorders Collaborators</p>
+                <p class="pub-journal"><strong>Clinical & Experimental Allergy</strong></p>
+                <p class="pub-doi">DOI: 10.1111/cea.70024</p>
+                <div class="pub-footer">
+                    <span class="pub-badge gbd">GBD Collaborator</span>
+                    <a href="https://doi.org/10.1111/cea.70024" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="gbd">
+                <div class="publication-header">
+                    <h3>Global, regional and national burden of dietary iron deficiency from 1990 to 2021: a Global Burden of Disease study</h3>
+                    <span class="pub-year">2025</span>
+                </div>
+                <p class="pub-authors">Lee S, Son Y, Hwang J, Kim MS; GBD 2021 Dietary Iron Deficiency Collaborators; Il Shin J, Yon DK, Kassebaum NJ</p>
+                <p class="pub-journal"><strong>Nature Medicine</strong></p>
+                <p class="pub-doi">DOI: 10.1038/s41591-025-03624-8</p>
+                <div class="pub-footer">
+                    <span class="pub-badge gbd">GBD Collaborator</span>
+                    <a href="https://doi.org/10.1038/s41591-025-03624-8" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="gbd">
+                <div class="publication-header">
+                    <h3>Global, regional, and national burden of household air pollution, 1990-2021: a systematic analysis for the Global Burden of Disease Study 2021</h3>
+                    <span class="pub-year">2025</span>
+                </div>
+                <p class="pub-authors">GBD 2021 HAP Collaborators</p>
+                <p class="pub-journal"><strong>The Lancet</strong></p>
+                <p class="pub-doi">DOI: 10.1016/S0140-6736(24)02840-X</p>
+                <div class="pub-footer">
+                    <span class="pub-badge gbd">GBD Collaborator</span>
+                    <a href="https://doi.org/10.1016/S0140-6736(24)02840-X" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="gbd">
+                <div class="publication-header">
+                    <h3>Changing life expectancy in European countries 1990-2021: a subanalysis of causes and risk factors from the Global Burden of Disease Study 2021</h3>
+                    <span class="pub-year">2025</span>
+                </div>
+                <p class="pub-authors">GBD 2021 Europe Life Expectancy Collaborators</p>
+                <p class="pub-journal"><strong>The Lancet Public Health</strong></p>
+                <p class="pub-doi">DOI: 10.1016/S2468-2667(25)00009-X</p>
+                <div class="pub-footer">
+                    <span class="pub-badge gbd">GBD Collaborator</span>
+                    <a href="https://doi.org/10.1016/S2468-2667(25)00009-X" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="gbd">
+                <div class="publication-header">
+                    <h3>Global, regional, and national age-sex-specific burden of diarrhoeal diseases, their risk factors, and aetiologies, 1990-2021, for 204 countries and territories: a systematic analysis for the Global Burden of Disease Study 2021</h3>
+                    <span class="pub-year">2024</span>
+                </div>
+                <p class="pub-authors">GBD 2021 Diarrhoeal Diseases Collaborators</p>
+                <p class="pub-journal"><strong>The Lancet Infectious Diseases</strong></p>
+                <p class="pub-doi">DOI: 10.1016/S1473-3099(24)00691-1</p>
+                <div class="pub-footer">
+                    <span class="pub-badge gbd">GBD Collaborator</span>
+                    <a href="https://doi.org/10.1016/S1473-3099(24)00691-1" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="gbd">
+                <div class="publication-header">
+                    <h3>The burden of diseases, injuries, and risk factors by state in the USA, 1990-2021: a systematic analysis for the Global Burden of Disease Study 2021</h3>
+                    <span class="pub-year">2024</span>
+                </div>
+                <p class="pub-authors">GBD 2021 US Burden of Disease Collaborators</p>
+                <p class="pub-journal"><strong>The Lancet</strong></p>
+                <p class="pub-doi">DOI: 10.1016/S0140-6736(24)01446-6</p>
+                <div class="pub-footer">
+                    <span class="pub-badge gbd">GBD Collaborator</span>
+                    <a href="https://doi.org/10.1016/S0140-6736(24)01446-6" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="gbd">
+                <div class="publication-header">
+                    <h3>Global, regional, and national burden of HIV/AIDS, 1990-2021, and forecasts to 2050, for 204 countries and territories: the Global Burden of Disease Study 2021</h3>
+                    <span class="pub-year">2024</span>
+                </div>
+                <p class="pub-authors">GBD 2021 HIV Collaborators</p>
+                <p class="pub-journal"><strong>The Lancet HIV</strong></p>
+                <p class="pub-doi">DOI: 10.1016/S2352-3018(24)00212-1</p>
+                <div class="pub-footer">
+                    <span class="pub-badge gbd">GBD Collaborator</span>
+                    <a href="https://doi.org/10.1016/S2352-3018(24)00212-1" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="gbd">
+                <div class="publication-header">
+                    <h3>National-level and state-level prevalence of overweight and obesity among children, adolescents, and adults in the USA, 1990-2021, and forecasts up to 2050</h3>
+                    <span class="pub-year">2024</span>
+                </div>
+                <p class="pub-authors">GBD 2021 US Obesity Forecasting Collaborators</p>
+                <p class="pub-journal"><strong>The Lancet</strong></p>
+                <p class="pub-doi">DOI: 10.1016/S0140-6736(24)01548-4</p>
+                <div class="pub-footer">
+                    <span class="pub-badge gbd">GBD Collaborator</span>
+                    <a href="https://doi.org/10.1016/S0140-6736(24)01548-4" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="gbd">
+                <div class="publication-header">
+                    <h3>Forecasting the effects of smoking prevalence scenarios on years of life lost and life expectancy from 2022 to 2050: a systematic analysis for the Global Burden of Disease Study 2021</h3>
+                    <span class="pub-year">2024</span>
+                </div>
+                <p class="pub-authors">GBD 2021 Tobacco Forecasting Collaborators</p>
+                <p class="pub-journal"><strong>The Lancet Public Health</strong></p>
+                <p class="pub-doi">DOI: 10.1016/S2468-2667(24)00166-X</p>
+                <div class="pub-footer">
+                    <span class="pub-badge gbd">GBD Collaborator</span>
+                    <a href="https://doi.org/10.1016/S2468-2667(24)00166-X" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="gbd">
+                <div class="publication-header">
+                    <h3>Global, regional, and national burden of stroke and its risk factors, 1990-2021: a systematic analysis for the Global Burden of Disease Study 2021</h3>
+                    <span class="pub-year">2024</span>
+                </div>
+                <p class="pub-authors">GBD 2021 Stroke Risk Factor Collaborators</p>
+                <p class="pub-journal"><strong>The Lancet Neurology</strong></p>
+                <p class="pub-doi">DOI: 10.1016/S1474-4422(24)00369-7</p>
+                <div class="pub-footer">
+                    <span class="pub-badge gbd">GBD Collaborator</span>
+                    <a href="https://doi.org/10.1016/S1474-4422(24)00369-7" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="gbd">
+                <div class="publication-header">
+                    <h3>Burden of disease scenarios for 204 countries and territories, 2022-2050: a forecasting analysis for the Global Burden of Disease Study 2021</h3>
+                    <span class="pub-year">2024</span>
+                </div>
+                <p class="pub-authors">GBD 2021 Forecasting Collaborators</p>
+                <p class="pub-journal"><strong>The Lancet</strong></p>
+                <p class="pub-doi">DOI: 10.1016/S0140-6736(24)00685-8</p>
+                <div class="pub-footer">
+                    <span class="pub-badge gbd">GBD Collaborator</span>
+                    <a href="https://doi.org/10.1016/S0140-6736(24)00685-8" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+
+            <div class="publication-item" data-category="gbd">
+                <div class="publication-header">
+                    <h3>Burden of disease scenarios by state in the USA, 2022-50: a forecasting analysis for the Global Burden of Disease Study 2021</h3>
+                    <span class="pub-year">2024</span>
+                </div>
+                <p class="pub-authors">GBD 2021 US Burden of Disease and Forecasting Collaborators</p>
+                <p class="pub-journal"><strong>The Lancet</strong></p>
+                <p class="pub-doi">DOI: 10.1016/S0140-6736(24)02246-3</p>
+                <div class="pub-footer">
+                    <span class="pub-badge gbd">GBD Collaborator</span>
+                    <a href="https://doi.org/10.1016/S0140-6736(24)02246-3" target="_blank" class="pub-link">View Paper</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+   <!-- Training Section -->
     <section id="training" class="training">
         <div class="container">
             <h2>Training & Capacity Development</h2>

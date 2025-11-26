@@ -41,6 +41,63 @@ body {
     padding: 0 20px;
 }
 
+
+/* Publication badges */
+.pub-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+.pub-badge.first-author {
+    background-color: rgba(33, 128, 141, 0.15);
+    color: var(--color-teal-500);
+    border: 1px solid rgba(33, 128, 141, 0.3);
+}
+
+.pub-badge.shared-first {
+    background-color: rgba(50, 184, 198, 0.15);
+    color: var(--color-teal-300);
+    border: 1px solid rgba(50, 184, 198, 0.3);
+}
+
+.pub-badge.co-author {
+    background-color: rgba(98, 108, 113, 0.15);
+    color: var(--color-slate-500);
+    border: 1px solid rgba(98, 108, 113, 0.3);
+}
+
+.pub-badge.senior-author {
+    background-color: rgba(168, 75, 47, 0.15);
+    color: var(--color-orange-500);
+    border: 1px solid rgba(168, 75, 47, 0.3);
+}
+
+.pub-badge.gbd {
+    background-color: rgba(94, 82, 64, 0.15);
+    color: var(--color-brown-600);
+    border: 1px solid rgba(94, 82, 64, 0.3);
+}
+
+/* Dark mode badge colors */
+@media (prefers-color-scheme: dark) {
+    .pub-badge.first-author {
+        background-color: rgba(50, 184, 198, 0.15);
+        color: var(--color-teal-300);
+        border: 1px solid rgba(50, 184, 198, 0.3);
+    }
+}
+
+[data-color-scheme="dark"] .pub-badge.first-author {
+    background-color: rgba(50, 184, 198, 0.15);
+    color: var(--color-teal-300);
+    border: 1px solid rgba(50, 184, 198, 0.3);
+}
+
+
 /* ============================================
    NAVIGATION BAR
    ============================================ */

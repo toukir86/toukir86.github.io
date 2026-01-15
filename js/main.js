@@ -126,7 +126,7 @@ const publicationData = [
     // ============ FIRST AUTHOR PUBLICATIONS ============
     {
     title: 'Machine learning-based prediction of maternal continuum of care completion: Evidence from Bangladesh Demographic and Health Survey 2022',
-    authors: '<strong>Noor STA</strong>, Raisha Binte Islam, Samin Yeasar, & Sazid Siddique',
+    authors: '<strong>Noor STA</strong>, Islam RB, Yeasar S, & Siddique S',
     authorship: 'first-author',
     journal: 'Array',
     year: 2025,
@@ -135,7 +135,7 @@ const publicationData = [
 },
 {
     title: 'Factors associated with early initiation of antenatal care in Bangladesh: a survival analysis using Bangladesh Demographic and Health Survey 2022',
-    authors: 'Md Sadakin Islam, <strong>Noor STA</strong>, Rabeya Anim Asha, Raisha Binte Islam, & Fazlur Rahman',
+    authors: 'Islam MS, <strong>Noor STA</strong>, Asha RA, Islam RB, & Rahman F',
     authorship: 'first-author',
     journal: 'BMJ Open',
     year: 2026,

@@ -125,6 +125,25 @@ const publicationsList = document.getElementById('publicationsList');
 const publicationData = [
     // ============ FIRST AUTHOR PUBLICATIONS ============
     {
+    title: 'Machine learning-based prediction of maternal continuum of care completion: Evidence from Bangladesh Demographic and Health Survey 2022',
+    authors: '<strong>Noor STA</strong>, Raisha Binte Islam, Samin Yeasar, & Sazid Siddique',
+    authorship: 'first-author',
+    journal: 'Array',
+    year: 2025,
+    doi: '10.1016/j.array.2025.100666',
+    url: 'https://doi.org/10.1016/j.array.2025.100666'
+},
+{
+    title: 'Factors associated with early initiation of antenatal care in Bangladesh: a survival analysis using Bangladesh Demographic and Health Survey 2022',
+    authors: 'Md Sadakin Islam, <strong>Noor STA</strong>, Rabeya Anim Asha, Raisha Binte Islam, & Fazlur Rahman',
+    authorship: 'first-author',
+    journal: 'BMJ Open',
+    year: 2026,
+    doi: '10.1136/bmjopen-2024-104709',
+    url: 'https://bmjopen.bmj.com/content/16/1/e104709'
+},
+
+    {
         title: 'Exploring mental health disparities in Mozambique: Depression and anxiety symptoms among reproductive-aged women using data from Mozambique Demographic and Health Survey 2022-23',
         authors: '<strong>Noor STA</strong>, Siddique S, Das O, Yeasar S, & Islam RB',
         authorship: 'first-author',

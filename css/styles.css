@@ -430,14 +430,12 @@ section h2::after {
     box-shadow: 0 0 0 4px var(--light-bg);
 }
 
-/* Education: use SUST logo for all markers */
+
+/* Education: SUST logo on top of default marker */
 .education-timeline .timeline-marker {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;                 /* keep circle; remove if you want square */
-    border: none;                       /* hide colored ring */
-    box-shadow: none;                   /* optional */
-    background: url("assets/SUST logo.png") center/cover no-repeat;
+    background-image: url("assets/SUST logo.png");
+    background-size: cover;
+    background-position: center;
 }
 
 /* Experience: generic company marker style */
@@ -450,19 +448,24 @@ section h2::after {
     background-color: transparent;
 }
 
-/* Different logo per company (icddr,b, SUST, Staff Asia) */
+/* Experience: company-specific logos */
 .experience-timeline .timeline-item.icddrb .timeline-marker {
-    background: url("assets/icddrb-Logo-Vector.svg-.png") center/cover no-repeat;
+    background-image: url("assets/icddrb-Logo-Vector.svg-.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .experience-timeline .timeline-item.sust .timeline-marker {
-    background: url("assets/SUST logo.png") center/cover no-repeat;
+    background-image: url("assets/SUST logo.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .experience-timeline .timeline-item.staffasia .timeline-marker {
-    background: url("assets/staff-asia-logo-2.png") center/cover no-repeat;
+    background-image: url("assets/staff-asia-logo-2.png");
+    background-size: cover;
+    background-position: center;
 }
-
 
 /* ============================================
    TRAINING SECTION

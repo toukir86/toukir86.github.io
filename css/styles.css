@@ -417,7 +417,35 @@ section h2::after {
    TIMELINE
    ============================================ */
 
-/* Base marker (fallback) */
+/* TIMELINE LAYOUT (unchanged) */
+.education-timeline,
+.experience-timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.education-timeline::before,
+.experience-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, var(--secondary-color), var(--accent-color));
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+.timeline-content {
+    margin-left: 1.5rem;
+}
+
+/* Base marker (visible circle) */
 .timeline-marker {
     position: absolute;
     left: -14px;
@@ -425,47 +453,84 @@ section h2::after {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background: white;
+    background: #ffffff;
     border: 3px solid var(--secondary-color);
     box-shadow: 0 0 0 4px var(--light-bg);
-}
-
-
-/* Education: SUST logo on top of default marker */
-.education-timeline .timeline-marker {
-    background-image: url("assets/SUST logo.png");
-    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
-/* Experience: generic company marker style */
-.experience-timeline .timeline-marker {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    border: none;
-    box-shadow: none;
-    background-color: transparent;
+/* EDUCATION: same SUST logo for both degrees */
+.education-timeline .timeline-item .timeline-marker {
+    background-image: url("assets/SUST logo.png");
 }
 
-/* Experience: company-specific logos */
+/* EXPERIENCE: use company‑specific logos */
 .experience-timeline .timeline-item.icddrb .timeline-marker {
     background-image: url("assets/icddrb-Logo-Vector.svg-.png");
-    background-size: cover;
-    background-position: center;
 }
 
 .experience-timeline .timeline-item.sust .timeline-marker {
     background-image: url("assets/SUST logo.png");
-    background-size: cover;
-    background-position: center;
 }
 
 .experience-timeline .timeline-item.staffasia .timeline-marker {
     background-image: url("assets/staff-asia-logo-2.png");
-    background-size: cover;
-    background-position: center;
 }
+
+/* TEXT STYLES (unchanged) */
+.timeline-content h3 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content .institution {
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.timeline-content .period {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.timeline-content .details {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
+.timeline-content .thesis {
+    margin-top: 0.75rem;
+    padding: 0.75rem;
+    background-color: var(--light-bg);
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+.responsibilities {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.responsibilities li {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    position: relative;
+    color: var(--text-light);
+}
+
+.responsibilities li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
 
 /* ============================================
    TRAINING SECTION

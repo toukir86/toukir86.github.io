@@ -99,6 +99,10 @@ body {
     border: 1px solid rgba(50, 184, 198, 0.3);
 }
 
+.__dimensions_badge_embed__ {
+    display: inline-block !important;
+}
+
 
 /* ============================================
    NAVIGATION BAR

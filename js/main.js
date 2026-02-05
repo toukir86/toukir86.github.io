@@ -458,9 +458,6 @@ const publicationData = [
 
 let currentFilter = 'all';
 
-if (window.__dimensions_embed && typeof window.__dimensions_embed.addBadges === 'function') {
-    window.__dimensions_embed.addBadges();
-}
 
 // ============================================
 // ANIMATION OBSERVER SETUP
@@ -537,7 +534,13 @@ function displayFilteredPublications(filtered) {
     
     // Reattach observer to newly created publication items
     attachPublicationAnimations();
+
+    // Re-render Dimensions badges for newly inserted HTML
+    if (window.__dimensions_embed && typeof window.__dimensions_embed.addBadges === 'function') {
+        window.__dimensions_embed.addBadges();
+    }
 }
+
 
 /**
  * Attach animations to publication items

@@ -458,6 +458,10 @@ const publicationData = [
 
 let currentFilter = 'all';
 
+if (window.__dimensions_embed && typeof window.__dimensions_embed.addBadges === 'function') {
+    window.__dimensions_embed.addBadges();
+}
+
 // ============================================
 // ANIMATION OBSERVER SETUP
 // ============================================

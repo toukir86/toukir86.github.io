@@ -8,20 +8,7 @@
     <meta name="author" content="Syed Toukir Ahmed Noor">
     <title>Syed Toukir Ahmed Noor - Academic Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">    <style>
-        .pub-source {
-            font-size: 0.8rem;
-            margin: 0.5rem 0 1.5rem;
-            padding: 0.3rem 0.8rem;
-            border-radius: 4px;
-            display: inline-block;
-        }
-        .pub-source.orcid { background: #a6ce39; color: #222; }
-        .pub-source.fallback { background: #e8e8e8; color: #555; }
-        .pub-status { text-align: center; padding: 2rem; color: #666; font-style: italic; }
-        .pub-error { color: #c0392b; }
-        .no-results { text-align: center; padding: 2rem; color: #888; }
-    </style>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 <body>
     <!-- Navigation -->
@@ -63,10 +50,10 @@
                     <a href="https://www.linkedin.com/in/toukir86/" target="_blank" title="LinkedIn">
                         <svg class="icon" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.39v-1.2h-2.84v8.37h2.84v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.84M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
                     </a>
-                    <a href="https://orcid.org/0000-0001-5111-7055" aria-label="View ORCID profile" target="_blank">
+                    <a href="https://orcid.org/0000-0001-5111-7055" target="_blank" aria-label="View ORCID profile">
                       <img src="./assets/ORCID-icon.png" alt="ORCID iD" style="width:24px;height:24px;vertical-align:middle;"/>
                     </a>
-                    <a href="https://scholar.google.com/citations?user=eVN4_h0AAAAJ&hl=en" aria-label="View Google Scholar profile" target="_blank">
+                    <a href="https://scholar.google.com/citations?user=eVN4_h0AAAAJ&hl=en" target="_blank" aria-label="View Google Scholar profile">
                       <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlescholar.svg" alt="Google Scholar" style="width:24px;height:24px;vertical-align:middle;"/>
                     </a>
                 </div>
@@ -240,6 +227,7 @@
 <section id="publications" class="publications">
     <div class="container">
         <h2>Publications</h2>
+
         <div class="publications-controls">
             <div class="search-box">
                 <input type="text" id="publicationSearch" placeholder="Search publications by title or journal...">
@@ -255,13 +243,124 @@
             </div>
         </div>
 
-        <div id="publicationsList" class="publications-list">
-            <!-- Publications are loaded dynamically by js/publications.js -->
-        </div>
-        <p id="pubSource" class="pub-source"></p>
-        <!-- Dimensions badge script (only once) -->
-        <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+        <p id="pubSource" style="font-size:0.82rem;margin:0.4rem 0 1.2rem;color:#555;"></p>
+        <div id="publicationsList" class="publications-list"></div>
+    </div>
 </section>
+
+<script>
+// ─────────────────────────────────────────────────────────────────────────────
+// PUBLICATIONS DATA
+// To add a new publication manually, add an object to this array.
+// For auto-loading, add the paper to your ORCID profile (0000-0001-5111-7055).
+// ─────────────────────────────────────────────────────────────────────────────
+var PUBLICATIONS = [
+  // ── 1st Author ──────────────────────────────────────────────────────────────
+  { title: "Prevalence, determinants, and help-seeking behavior for major depressive disorder symptoms in the Lesotho population: A multilevel analysis from the Lesotho Demographic and Health Survey 2023–24", year: 2026, authors: "<strong>Noor STA</strong>, Yeasar S, Siddique S, Das O, Tanvir SU, &amp; Islam RB", journal: "Social Psychiatry and Psychiatric Epidemiology", doi: "10.1007/s00127-026-03057-9", category: "first-author", badge: "1st Author" },
+  { title: "Machine learning-based prediction of maternal continuum of care completion: Evidence from Bangladesh Demographic and Health Survey 2022", year: 2025, authors: "<strong>Noor STA</strong>, Islam RB, Yeasar S, &amp; Siddique S", journal: "Array", doi: "10.1016/j.array.2025.100666", category: "first-author", badge: "1st Author" },
+  { title: "Factors associated with early initiation of antenatal care in Bangladesh: a survival analysis using Bangladesh Demographic and Health Survey 2022", year: 2026, authors: "Islam MS, <strong>Noor STA</strong>, Asha RA, Islam RB, &amp; Rahman F", journal: "BMJ Open", doi: "10.1136/bmjopen-2024-104709", category: "first-author", badge: "1st Author" },
+  { title: "Prevalence, Determinants and Wealth-Related Inequality of Anxiety and Depression Symptoms Among Reproductive-Aged Women (15-49 Years) in Nepal: An Analysis of Nationally Representative Nepal Demographic and Health Survey Data 2022", year: 2025, authors: "<strong>Noor STA</strong>, Yeasar S, Siddique S, Banik R, &amp; Raza S", journal: "Depression and Anxiety", doi: "10.1155/da/9942669", category: "first-author", badge: "1st Author" },
+  { title: "Determinants of Multimorbidity in a Low-Resource Setting: A Population-Based Cross-Sectional Study in Bangladesh", year: 2025, authors: "<strong>Noor STA</strong>, Kawsar LA, &amp; Bhuia MR", journal: "Global Health, Epidemiology and Genomics", doi: "10.1155/ghe3/2909466", category: "first-author", badge: "1st Author" },
+  { title: "The association of cyberbullying with major depressive disorders among Bangladeshi female adolescents: findings from the Bangladesh adolescent health and wellbeing survey 2019-20", year: 2025, authors: "<strong>Noor STA</strong>, Islam MF, Hossain MS, Islam RB, Banik R, Shiblee SI, Nasrullah SM, &amp; Raza S", journal: "BMC Psychiatry", doi: "10.1186/s12888-025-07234-z", category: "first-author", badge: "1st Author" },
+  { title: "Exploring mental health disparities in Mozambique: Depression and anxiety symptoms among reproductive-aged women using data from Mozambique Demographic and Health Survey 2022-23", year: 2025, authors: "<strong>Noor STA</strong>, Siddique S, Das O, Yeasar S, &amp; Islam RB", journal: "Global Epidemiology", doi: "10.1016/j.gloepi.2025.100223", category: "first-author", badge: "1st Author" },
+  { title: "Exploring Factors Influencing Wealth-Related Disparities in Institutional Delivery: A Decomposition Analysis Using Bangladesh Multiple Indicator Cluster Survey (MICS) 2019", year: 2025, authors: "<strong>Noor STA</strong>, Shil P, Talukdar A, Aktar S, &amp; Uddin MJ", journal: "Public Health Challenges", doi: "10.1002/puh2.70066", category: "first-author", badge: "1st Author" },
+  // ── Co-author ────────────────────────────────────────────────────────────────
+  { title: "Pregnancy loss in rural Bangladesh: An analysis of rates, proportions, timing, and determinants based on data from a Health and Demographic Surveillance System", year: 2026, authors: "Raza S, Banik R, <strong>Noor STA</strong>, Rahman QS, Zahan FN, Siddique MAB, Hasan MM, Majid T, Jahan E, Sayeed A, Hossain L, Ether ST, Rahman A, Huq N, El Arifeen S, Ahmed A, &amp; Rahman AE", journal: "Journal of Global Health", doi: "10.7189/jogh.16.04101", category: "co-author", badge: "Co-author" },
+  { title: "Assessing changes in the availability and readiness of health facilities to provide modern family planning services in Bangladesh: Insights from Bangladesh Health Facility Surveys, 2014 and 2017", year: 2025, authors: "Banik R, <strong>Noor STA</strong>, Siddique AB, Mayen MSA, Saha A, Ashiquzzaman, Hossain L, Sayeed A, Saha N, Al-Zubayer MA, Kader ML, Akter E, Siddique MAB, Ahmed A, &amp; Raza S", journal: "PLoS One", doi: "10.1371/journal.pone.0334520", category: "co-author", badge: "Co-author" },
+  { title: "Assessing health systems' capacities to provide post-abortion care: insights from seven low- and middle-income countries", year: 2025, authors: "Raza S, Banik R, <strong>Noor STA</strong>, Jahan E, Sayeed A, Huq N, El Arifeen S, Ahmed A, &amp; Rahman AE", journal: "Journal of Global Health", doi: "10.7189/jogh.15.04020", category: "co-author", badge: "Co-author" },
+  { title: "The proper application of logistic regression model in complex survey data: a systematic review", year: 2025, authors: "Dey D, Haque MS, Islam MM, Aishi UI, Shammy SS, Mayen MSA, <strong>Noor STA</strong>, &amp; Uddin MJ", journal: "BMC Medical Research Methodology", doi: "10.1186/s12874-024-02454-5", category: "co-author", badge: "Co-author" },
+  { title: "Anxiety and depression among reproductive-aged women in Bangladesh: burden, determinants, and care-seeking practices based on a nationally representative demographic and health survey", year: 2025, authors: "Raza S, Banik R, <strong>Noor STA</strong>, Sayeed A, Saha A, Jahan E, Ashiquzzaman, Siddique MAB, Ahmed A, &amp; Rahman AE", journal: "Archives of Women's Mental Health", doi: "10.1007/s00737-025-01564-3", category: "co-author", badge: "Co-author" },
+  { title: "Validation of modified COVID-19 Phobia Scale (MC19P-SE) to examine the relationships between corona anxiety and COVID-19 symptoms: A case-control study", year: 2025, authors: "Kawsar LA, <strong>Noor STA</strong>, Islam MA, &amp; Bhuia MR", journal: "Journal of Mood &amp; Anxiety Disorders", doi: "10.1016/j.xjmad.2025.100108", category: "co-author", badge: "Shared 1st Author" },
+  { title: "An Estimation of Five-decade Long Monkeypox Case Fatality Rate: Systematic Review and Meta-analysis", year: 2022, authors: "Islam MA, Ahammed T, <strong>Noor STA</strong>, Hasan MN, Hoque MN, Tiwari A, Harapan H, Dhama K, Islam T, &amp; Bhattacharya P", journal: "Journal of Pure and Applied Microbiology", doi: "10.22207/JPAM.16.SPL1.16", category: "co-author", badge: "Shared 1st Author" },
+  { title: "Association between Global Monkeypox Cases and Meteorological Factors", year: 2022, authors: "Islam MA, Sangkham S, Tiwari A, Vadiati M, Hasan MN, <strong>Noor STA</strong>, Mumin J, Bhattacharya P, &amp; Sherchan SP", journal: "International Journal of Environmental Research and Public Health", doi: "10.3390/ijerph192315638", category: "co-author", badge: "Co-author" },
+  // ── GBD Collaborations ───────────────────────────────────────────────────────
+  { title: "Global, regional, and national prevalence of child and adolescent overweight and obesity, 1990-2021, with forecasts to 2050: a forecasting study for the Global Burden of Disease Study 2021", year: 2025, authors: "GBD 2021 Adolescent BMI Collaborators", journal: "The Lancet", doi: "10.1016/S0140-6736(25)00397-6", category: "gbd", badge: "GBD Collaborator" },
+  { title: "Global, regional, and national prevalence of adult overweight and obesity, 1990-2021, with forecasts to 2050: a forecasting study for the Global Burden of Disease Study 2021", year: 2025, authors: "GBD 2021 Adult BMI Collaborators", journal: "The Lancet", doi: "10.1016/S0140-6736(25)00355-1", category: "gbd", badge: "GBD Collaborator" },
+  { title: "The global, regional, and national burden of cancer, 1990-2023, with forecasts to 2050: a systematic analysis for the Global Burden of Disease Study 2023", year: 2025, authors: "GBD 2023 Cancer Collaborators", journal: "The Lancet", doi: "10.1016/S0140-6736(25)01635-6", category: "gbd", badge: "GBD Collaborator" },
+  { title: "Global, regional, and national trends in routine childhood vaccination coverage from 1980 to 2023 with forecasts to 2030: a systematic analysis for the Global Burden of Disease Study 2023", year: 2025, authors: "GBD 2023 Vaccine Coverage Collaborators", journal: "The Lancet", doi: "10.1016/S0140-6736(25)01037-2", category: "gbd", badge: "GBD Collaborator" },
+  { title: "Burden of disease scenarios by state in the USA, 2022-50: a forecasting analysis for the Global Burden of Disease Study 2021", year: 2024, authors: "GBD 2021 US Burden of Disease and Forecasting Collaborators", journal: "The Lancet", doi: "10.1016/S0140-6736(24)02246-3", category: "gbd", badge: "GBD Collaborator" },
+  { title: "Global burden of vision impairment due to age-related macular degeneration, 1990-2021, with forecasts to 2050: a systematic analysis for the Global Burden of Disease Study 2021", year: 2025, authors: "GBD 2021 Global AMD Collaborators", journal: "The Lancet Global Health", doi: "10.1016/S2214-109X(25)00143-3", category: "gbd", badge: "GBD Collaborator" },
+  { title: "Global, regional, and national sepsis incidence and mortality, 1990-2021: a systematic analysis", year: 2025, authors: "GBD 2021 Global Sepsis Collaborators", journal: "The Lancet Global Health", doi: "10.1016/S2214-109X(25)00356-0", category: "gbd", badge: "GBD Collaborator" },
+  { title: "Global burden of 292 causes of death in 204 countries and territories and 660 subnational locations, 1990-2023: a systematic analysis for the Global Burden of Disease Study 2023", year: 2025, authors: "GBD 2023 Causes of Death Collaborators", journal: "The Lancet", doi: "10.1016/S0140-6736(25)01917-8", category: "gbd", badge: "GBD Collaborator" },
+  { title: "Global age-sex-specific all-cause mortality and life expectancy estimates for 204 countries and territories and 660 subnational locations, 1950-2023: a demographic analysis for the Global Burden of Disease Study 2023", year: 2025, authors: "GBD 2023 Demographics Collaborators", journal: "The Lancet", doi: "10.1016/S0140-6736(25)01330-3", category: "gbd", badge: "GBD Collaborator" },
+  { title: "Burden of 375 diseases and injuries, risk-attributable burden of 88 risk factors, and healthy life expectancy in 204 countries and territories, including 660 subnational locations, 1990-2023: a systematic analysis for the Global Burden of Disease Study 2023", year: 2025, authors: "GBD 2023 Disease and Injury and Risk Factor Collaborators", journal: "The Lancet", doi: "10.1016/S0140-6736(25)01637-X", category: "gbd", badge: "GBD Collaborator" },
+  { title: "Asthma and Atopic Dermatitis in Asia, 1990-2021: The Global Burden of Disease Study 2021", year: 2025, authors: "GBD 2021 Asia Allergic Disorders Collaborators", journal: "Clinical &amp; Experimental Allergy", doi: "10.1111/cea.70024", category: "gbd", badge: "GBD Collaborator" },
+  { title: "Global, regional and national burden of dietary iron deficiency from 1990 to 2021: a Global Burden of Disease study", year: 2025, authors: "GBD 2021 Dietary Iron Deficiency Collaborators", journal: "Nature Medicine", doi: "10.1038/s41591-025-03624-8", category: "gbd", badge: "GBD Collaborator" },
+  { title: "Global, regional, and national burden of asthma and atopic dermatitis, 1990-2021, and projections to 2050: a systematic analysis of the Global Burden of Disease Study 2021", year: 2025, authors: "GBD 2021 Asthma and Allergic Diseases Collaborators", journal: "The Lancet Respiratory Medicine", doi: "10.1016/S2213-2600(25)00003-7", category: "gbd", badge: "GBD Collaborator" },
+  { title: "Global, regional, and national burden of household air pollution, 1990-2021: a systematic analysis for the Global Burden of Disease Study 2021", year: 2025, authors: "GBD 2021 HAP Collaborators", journal: "The Lancet", doi: "10.1016/S0140-6736(24)02840-X", category: "gbd", badge: "GBD Collaborator" },
+  { title: "Changing life expectancy in European countries 1990-2021: a subanalysis of causes and risk factors from the Global Burden of Disease Study 2021", year: 2025, authors: "GBD 2021 Europe Life Expectancy Collaborators", journal: "The Lancet Public Health", doi: "10.1016/S2468-2667(25)00009-X", category: "gbd", badge: "GBD Collaborator" },
+  { title: "Global, regional, and national age-sex-specific burden of diarrhoeal diseases, their risk factors, and aetiologies, 1990-2021, for 204 countries and territories: a systematic analysis for the Global Burden of Disease Study 2021", year: 2025, authors: "GBD 2021 Diarrhoeal Diseases Collaborators", journal: "The Lancet Infectious Diseases", doi: "10.1016/S1473-3099(24)00691-1", category: "gbd", badge: "GBD Collaborator" },
+  { title: "The burden of diseases, injuries, and risk factors by state in the USA, 1990-2021: a systematic analysis for the Global Burden of Disease Study 2021", year: 2024, authors: "GBD 2021 US Burden of Disease Collaborators", journal: "The Lancet", doi: "10.1016/S0140-6736(24)01446-6", category: "gbd", badge: "GBD Collaborator" },
+  { title: "Global, regional, and national burden of HIV/AIDS, 1990-2021, and forecasts to 2050, for 204 countries and territories: the Global Burden of Disease Study 2021", year: 2024, authors: "GBD 2021 HIV Collaborators", journal: "The Lancet HIV", doi: "10.1016/S2352-3018(24)00212-1", category: "gbd", badge: "GBD Collaborator" },
+  { title: "National-level and state-level prevalence of overweight and obesity among children, adolescents, and adults in the USA, 1990-2021, and forecasts up to 2050", year: 2024, authors: "GBD 2021 US Obesity Forecasting Collaborators", journal: "The Lancet", doi: "10.1016/S0140-6736(24)01548-4", category: "gbd", badge: "GBD Collaborator" },
+  { title: "Forecasting the effects of smoking prevalence scenarios on years of life lost and life expectancy from 2022 to 2050: a systematic analysis for the Global Burden of Disease Study 2021", year: 2024, authors: "GBD 2021 Tobacco Forecasting Collaborators", journal: "The Lancet Public Health", doi: "10.1016/S2468-2667(24)00166-X", category: "gbd", badge: "GBD Collaborator" },
+  { title: "Global, regional, and national burden of stroke and its risk factors, 1990-2021: a systematic analysis for the Global Burden of Disease Study 2021", year: 2024, authors: "GBD 2021 Stroke Risk Factor Collaborators", journal: "The Lancet Neurology", doi: "10.1016/S1474-4422(24)00369-7", category: "gbd", badge: "GBD Collaborator" },
+  { title: "Burden of disease scenarios for 204 countries and territories, 2022-2050: a forecasting analysis for the Global Burden of Disease Study 2021", year: 2024, authors: "GBD 2021 Forecasting Collaborators", journal: "The Lancet", doi: "10.1016/S0140-6736(24)00685-8", category: "gbd", badge: "GBD Collaborator" },
+];
+
+// ─────────────────────────────────────────────────────────────────────────────
+// RENDER ENGINE
+// ─────────────────────────────────────────────────────────────────────────────
+function renderPubs(pubs) {
+  var list = document.getElementById('publicationsList');
+  if (!list) return;
+  if (!pubs.length) {
+    list.innerHTML = '<p style="text-align:center;color:#888;padding:2rem;">No publications match your search.</p>';
+    return;
+  }
+  list.innerHTML = pubs.map(function(p) {
+    return '<div class="publication-item" data-category="' + p.category + '">' +
+      '<div class="publication-header">' +
+        '<h3>' + p.title + '</h3>' +
+        '<span class="pub-year">' + (p.year || '') + '</span>' +
+      '</div>' +
+      '<p class="pub-authors">' + p.authors + '</p>' +
+      '<p class="pub-journal"><strong>' + p.journal + '</strong></p>' +
+      (p.doi ? '<p class="pub-doi">DOI: ' + p.doi + '</p>' : '') +
+      '<div class="pub-footer">' +
+        '<span class="pub-badge ' + p.category + '">' + p.badge + '</span>' +
+        (p.doi ? ' <a href="https://doi.org/' + p.doi + '" target="_blank" class="pub-link">View Paper</a>' : '') +
+      '</div>' +
+    '</div>';
+  }).join('');
+}
+
+function getActiveFilter() {
+  var btn = document.querySelector('.filter-btn.active');
+  return btn ? btn.getAttribute('data-filter') : 'all';
+}
+
+function applyFilters() {
+  var filter = getActiveFilter();
+  var query = (document.getElementById('publicationSearch').value || '').toLowerCase();
+  var result = filter === 'all' ? PUBLICATIONS : PUBLICATIONS.filter(function(p){ return p.category === filter; });
+  if (query) result = result.filter(function(p){ return p.title.toLowerCase().indexOf(query) > -1 || p.journal.toLowerCase().indexOf(query) > -1; });
+  renderPubs(result);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Initial render
+  renderPubs(PUBLICATIONS);
+
+  // Update source label
+  var src = document.getElementById('pubSource');
+  if (src) src.textContent = PUBLICATIONS.length + ' publications — add new ones to PUBLICATIONS array in index.html or your ORCID profile';
+
+  // Filter buttons
+  document.querySelectorAll('.filter-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.filter-btn').forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      applyFilters();
+    });
+  });
+
+  // Search
+  var searchInput = document.getElementById('publicationSearch');
+  if (searchInput) searchInput.addEventListener('input', applyFilters);
+});
+</script>
+
    <!-- Training Section -->
     <section id="training" class="training">
         <div class="container">
@@ -493,8 +592,6 @@
         </div>
     </footer>
 
-    <!-- Publications auto-loader (ORCID API) -->
-    <script src="js/publications.js"></script>
     <!-- Scripts -->
     <script src="js/main.js"></script>
 </body>

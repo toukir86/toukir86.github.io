@@ -645,3 +645,14 @@ const cvDownloadBtn = document.querySelector('a[download="cv.pdf"]');
 if (cvDownloadBtn) {
     cvDownloadBtn.addEventListener('click', () => trackLinkClick('cv-download'));
 }
+
+// ============================================
+// LAST UPDATED DATE
+// ============================================
+document.addEventListener('DOMContentLoaded', () => {
+    const el = document.getElementById('lastUpdated');
+    if (el) {
+        const d = new Date(document.lastModified);
+        el.textContent = d.toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' });
+    }
+});

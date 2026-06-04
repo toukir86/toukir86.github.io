@@ -645,6 +645,15 @@ const cvDownloadBtn = document.querySelector('a[download="cv.pdf"]');
 if (cvDownloadBtn) {
     cvDownloadBtn.addEventListener('click', () => trackLinkClick('cv-download'));
 }
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2PC6BVNFLQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2PC6BVNFLQ');
+</script>
 
 // ============================================
 // LAST UPDATED DATE

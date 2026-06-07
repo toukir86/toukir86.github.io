@@ -52,8 +52,9 @@ const slides = document.querySelectorAll('.training-slide');
 const indicators = document.querySelectorAll('.carousel-indicators .indicator');
 const carousel = document.querySelector('.training-carousel');
 
+// FIX 2: Added null check for carousel before accessing its style
 function showSlide(index) {
-    if (slides.length === 0) return;
+    if (slides.length === 0 || !carousel) return;
 
     if (index >= slides.length) {
         currentSlide = 0;
@@ -78,7 +79,6 @@ if (nextBtn) nextBtn.addEventListener('click', () => showSlide(currentSlide + 1)
 
 indicators.forEach(indicator => {
     indicator.addEventListener('click', (e) => {
-        
         showSlide(parseInt(e.target.getAttribute('data-slide')));
     });
 });
@@ -452,7 +452,6 @@ const observerOptions = {
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            
             entry.target.style.animation = 'fadeInUp 0.6s ease forwards';
             observer.unobserve(entry.target);
         }
@@ -504,7 +503,6 @@ function displayFilteredPublications(filtered) {
         return;
     }
 
-    
     publicationsList.innerHTML = filtered.map(pub => createPublicationHTML(pub)).join('');
     attachPublicationAnimations();
 }
@@ -512,7 +510,6 @@ function displayFilteredPublications(filtered) {
 function attachPublicationAnimations() {
     if (!publicationsList) return;
     publicationsList.querySelectorAll('.publication-item').forEach((el, index) => {
-        
         el.style.animationDelay = `${index * 0.05}s`;
         observer.observe(el);
     });
@@ -542,11 +539,6 @@ function createPublicationHTML(pub) {
         </div>`;
 }
 
-// Init publications on DOMContentLoaded
-document.addEventListener('DOMContentLoaded', () => {
-    if (publicationsList) filterPublications();
-});
-
 // Search listeners
 if (searchInput) {
     searchInput.addEventListener('keyup', filterPublications);
@@ -557,7 +549,6 @@ if (searchInput) {
 filterButtons.forEach(button => {
     button.addEventListener('click', (e) => {
         filterButtons.forEach(btn => btn.classList.remove('active'));
-        
         e.target.classList.add('active');
         currentFilter = e.target.getAttribute('data-filter');
         filterPublications();
@@ -594,7 +585,6 @@ scrollToTopBtn.style.cssText = `
 document.body.appendChild(scrollToTopBtn);
 
 window.addEventListener('scroll', () => {
-    
     if (window.pageYOffset > 300) {
         scrollToTopBtn.style.display = 'flex';
         scrollToTopBtn.style.alignItems = 'center';
@@ -630,6 +620,7 @@ document.querySelectorAll('a[target="_blank"]').forEach(link => {
 // ============================================
 // INITIALIZATION
 // ============================================
+// FIX 3: Single DOMContentLoaded — removed duplicate filterPublications() call
 document.addEventListener('DOMContentLoaded', () => {
     if (publicationsList) filterPublications();
     trackPageView();
@@ -645,15 +636,6 @@ const cvDownloadBtn = document.querySelector('a[download="cv.pdf"]');
 if (cvDownloadBtn) {
     cvDownloadBtn.addEventListener('click', () => trackLinkClick('cv-download'));
 }
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2PC6BVNFLQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-2PC6BVNFLQ');
-</script>
 
 // ============================================
 // LAST UPDATED DATE

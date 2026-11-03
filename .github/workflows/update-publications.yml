@@ -1,0 +1,50 @@
+name: Update publications from ORCID
+
+on:
+  schedule:
+    - cron: '23 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: orcid-publication-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Fetch public ORCID works
+        run: node scripts/sync-orcid.mjs
+        env:
+          ORCID_CLIENT_ID: ${{ secrets.ORCID_CLIENT_ID }}
+          ORCID_CLIENT_SECRET: ${{ secrets.ORCID_CLIENT_SECRET }}
+      - name: Commit updates
+        id: commit
+        shell: bash
+        run: |
+          if git diff --quiet -- js/main.js; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add js/main.js
+          git commit -m "Update publications from ORCID"
+          git push origin HEAD:main
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Deploy updated website
+        if: steps.commit.outputs.changed == 'true'
+        run: gh workflow run jekyll-gh-pages.yml --ref main
+        env:
+          GH_TOKEN: ${{ github.token }}

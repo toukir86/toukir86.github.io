@@ -20,7 +20,15 @@ const tokenResponse = await fetch('https://orcid.org/oauth/token', {
   body: new URLSearchParams({ client_id: clientId, client_secret: secret, grant_type: 'client_credentials', scope: '/read-public' }),
   signal: AbortSignal.timeout(30000)
 });
-if (!tokenResponse.ok) throw new Error(`ORCID authentication failed (${tokenResponse.status}); no files changed.`);
+if (!tokenResponse.ok) {
+  const details = await tokenResponse.json().catch(() => ({}));
+  const code = String(details.error || 'unknown_error')
+    .replace(/[^a-zA-Z0-9_]/g, '');
+
+  throw new Error(
+    `ORCID authentication failed (${tokenResponse.status}): ${code}`
+  );
+};
 const { access_token: token } = await tokenResponse.json();
 if (!token) throw new Error('ORCID returned no access token.');
 async function read(endpoint) {

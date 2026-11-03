@@ -637,6 +637,7 @@ if (cvDownloadBtn) {
     cvDownloadBtn.addEventListener('click', () => trackLinkClick('cv-download'));
 }
 
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2PC6BVNFLQ"></script>
 <script>

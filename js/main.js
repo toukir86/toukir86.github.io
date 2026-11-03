@@ -89,353 +89,437 @@ indicators.forEach(indicator => {
 // Set authorship to 'first-author', 'co-author', or 'gbd'.
 // ============================================
 const publicationData = [
-
-    // ── 1st Author ──────────────────────────────────────────────────────────
     {
-        title: 'Prevalence, determinants, and help-seeking behavior for major depressive disorder symptoms in the Lesotho population: A multilevel analysis from the Lesotho Demographic and Health Survey 2023–24',
-        authors: '<strong>Noor STA</strong>, Yeasar S, Siddique S, Das O, Tanvir SU, & Islam RB',
-        authorship: 'first-author',
-        journal: 'Social Psychiatry and Psychiatric Epidemiology',
-        year: 2026,
-        doi: '10.1007/s00127-026-03057-9',
-        url: 'https://doi.org/10.1007/s00127-026-03057-9'
+        "title": "Prevalence, determinants, and help-seeking behavior for major depressive disorder symptoms in the Lesotho population: A multilevel analysis from the Lesotho Demographic and Health Survey 2023–24",
+        "authors": "<strong>Noor STA</strong>, Yeasar S, Siddique S, Das O, Tanvir SU, & Islam RB",
+        "authorship": "first-author",
+        "journal": "Social Psychiatry and Psychiatric Epidemiology",
+        "year": 2026,
+        "doi": "10.1007/s00127-026-03057-9",
+        "url": "https://doi.org/10.1007/s00127-026-03057-9"
     },
     {
-        title: 'Machine learning-based prediction of maternal continuum of care completion: Evidence from Bangladesh Demographic and Health Survey 2022',
-        authors: '<strong>Noor STA</strong>, Islam RB, Yeasar S, & Siddique S',
-        authorship: 'first-author',
-        journal: 'Array',
-        year: 2025,
-        doi: '10.1016/j.array.2025.100666',
-        url: 'https://doi.org/10.1016/j.array.2025.100666'
+        "title": "Factors associated with early initiation of antenatal care in Bangladesh: a survival analysis using Bangladesh Demographic and Health Survey 2022",
+        "authors": "Islam MS, <strong>Noor STA</strong>, Asha RA, Islam RB, & Rahman F",
+        "authorship": "first-author",
+        "journal": "BMJ Open",
+        "year": 2026,
+        "doi": "10.1136/bmjopen-2024-104709",
+        "url": "https://bmjopen.bmj.com/content/16/1/e104709"
     },
     {
-        title: 'Factors associated with early initiation of antenatal care in Bangladesh: a survival analysis using Bangladesh Demographic and Health Survey 2022',
-        authors: 'Islam MS, <strong>Noor STA</strong>, Asha RA, Islam RB, & Rahman F',
-        authorship: 'first-author',
-        journal: 'BMJ Open',
-        year: 2026,
-        doi: '10.1136/bmjopen-2024-104709',
-        url: 'https://bmjopen.bmj.com/content/16/1/e104709'
+        "title": "Pregnancy loss in rural Bangladesh: An analysis of rates, proportions, timing, and determinants based on data from a Health and Demographic Surveillance System",
+        "authors": "Raza S, Banik R, <strong>Noor STA</strong>, Rahman QS, Zahan FN, Siddique MAB, Hasan MM, Majid T, Jahan E, Sayeed A, Hossain L, Ether ST, Rahman A, Huq N, El Arifeen S, Ahmed A, & Rahman AE",
+        "authorship": "co-author",
+        "journal": "Journal of Global Health",
+        "year": 2026,
+        "doi": "10.7189/jogh.16.04101",
+        "url": "https://doi.org/10.7189/jogh.16.04101"
     },
     {
-        title: 'Prevalence, Determinants and Wealth-Related Inequality of Anxiety and Depression Symptoms Among Reproductive-Aged Women (15-49 Years) in Nepal: An Analysis of Nationally Representative Nepal Demographic and Health Survey Data 2022',
-        authors: '<strong>Noor STA</strong>, Yeasar S, Siddique S, Banik R, & Raza S',
-        authorship: 'first-author',
-        journal: 'Depression and Anxiety',
-        year: 2025,
-        doi: '10.1155/da/9942669',
-        url: 'https://doi.org/10.1155/da/9942669'
+        "title": "Trends, patterns, determinants and socio-economic inequality of high-risk fertility behavior (HRFB) among Bangladeshi women: Evidence from Bangladesh Demographic and Health Surveys",
+        "authors": "Raisha Binte Islam, Ahmed Jubayer, Syed Toukir Ahmed Noor",
+        "authorship": "unclassified",
+        "journal": "PLOS One",
+        "year": 2026,
+        "doi": "10.1371/journal.pone.0356299",
+        "url": "https://doi.org/10.1371/journal.pone.0356299"
     },
     {
-        title: 'Determinants of Multimorbidity in a Low-resource Setting: A Population-based Cross-sectional Study in Bangladesh',
-        authors: '<strong>Noor STA</strong>, Kawsar LA, & Bhuia MR',
-        authorship: 'first-author',
-        journal: 'Global Health, Epidemiology and Genomics',
-        year: 2025,
-        doi: '10.1155/ghe3/2909466',
-        url: 'https://doi.org/10.1155/ghe3/2909466'
+        "title": "Trends, patterns, determinants and socio-economic inequality of high-risk fertility behaviour (HRFB) among Bangladeshi women: evidence from Bangladesh Demographic Health Survey",
+        "authors": "Raisha Binte Islam, Syed Toukir Ahmed Noor",
+        "authorship": "unclassified",
+        "journal": "",
+        "year": 2026,
+        "doi": "10.64898/2026.08.04.26359654",
+        "url": "https://doi.org/10.64898/2026.08.04.26359654"
     },
     {
-        title: 'The association of cyberbullying with major depressive disorders among Bangladeshi female adolescents: findings from the Bangladesh adolescent health and wellbeing survey 2019-20',
-        authors: '<strong>Noor STA</strong>, Islam MF, Hossain MS, Islam RB, Banik R, Shiblee SI, Nasrullah SM, & Raza S',
-        authorship: 'first-author',
-        journal: 'BMC Psychiatry',
-        year: 2025,
-        doi: '10.1186/s12888-025-07234-z',
-        url: 'https://doi.org/10.1186/s12888-025-07234-z'
+        "title": "Prevalence and determinants of premature or early menopause: a pooled analysis of 716 648 women from 44 low- and middle-income countries",
+        "authors": "Raisha Binte Islam, Syed Toukir Ahmed Noor, Somaya Mostarin, Sourav Roy, Lubna Hossain, Anisuddin Ahmed, Abu Sayeed",
+        "authorship": "unclassified",
+        "journal": "BMJ Global Health",
+        "year": 2026,
+        "doi": "10.1136/bmjgh-2026-023742",
+        "url": "https://doi.org/10.1136/bmjgh-2026-023742"
     },
     {
-        title: 'Exploring mental health disparities in Mozambique: Depression and anxiety symptoms among reproductive-aged women using data from Mozambique Demographic and Health Survey 2022-23',
-        authors: '<strong>Noor STA</strong>, Siddique S, Das O, Yeasar S, & Islam RB',
-        authorship: 'first-author',
-        journal: 'Global Epidemiology',
-        year: 2025,
-        doi: '10.1016/j.gloepi.2025.100223',
-        url: 'https://doi.org/10.1016/j.gloepi.2025.100223'
+        "title": "Sexual and Reproductive Health Education Through a Mobile App-Based Approach Among Bangladeshi Adolescents: Findings from a Pilot Study (Preprint)",
+        "authors": "Tanvir Hayder, Raisha Binte Islam, Md Refat Uz Zaman Sajib, Kamrul Hasan, Mushfika Binta Latif, Soaiba Zannat, Monon Kanti Das, Md Faisal Kabir, Syed Toukir Ahmed Noor, Md Lutful Kader, Md. Akib Al-Zubayer, Saraban Tahura Ether, Sawkia Afroz, Abu Sayeed, Lubna Hossain, Md. Mehedi Hasan, Anisuddin Ahmed, Ahmed Ehsanur Rahman, Hassan Rushekh Mahmood",
+        "authorship": "unclassified",
+        "journal": "",
+        "year": 2026,
+        "doi": "10.2196/preprints.94447",
+        "url": "https://doi.org/10.2196/preprints.94447"
     },
     {
-        title: 'Exploring Factors Influencing Wealth-Related Disparities in Institutional Delivery: A Decomposition Analysis Using Bangladesh Multiple Indicator Cluster Survey (MICS) 2019',
-        authors: '<strong>Noor STA</strong>, Shil P, Talukdar A, Aktar S, & Uddin MJ',
-        authorship: 'first-author',
-        journal: 'Public Health Challenges',
-        year: 2025,
-        doi: '10.1002/puh2.70066',
-        url: 'https://doi.org/10.1002/puh2.70066'
-    },
-
-    // ── Co-author ────────────────────────────────────────────────────────────
-    {
-        title: 'Pregnancy loss in rural Bangladesh: An analysis of rates, proportions, timing, and determinants based on data from a Health and Demographic Surveillance System',
-        authors: 'Raza S, Banik R, <strong>Noor STA</strong>, Rahman QS, Zahan FN, Siddique MAB, Hasan MM, Majid T, Jahan E, Sayeed A, Hossain L, Ether ST, Rahman A, Huq N, El Arifeen S, Ahmed A, & Rahman AE',
-        authorship: 'co-author',
-        journal: 'Journal of Global Health',
-        year: 2026,
-        doi: '10.7189/jogh.16.04101',
-        url: 'https://doi.org/10.7189/jogh.16.04101'
+        "title": "Prevalence and determinants of child malnutrition in Bangladesh: a comparative analysis of multilevel modeling",
+        "authors": "Afroza Jannat Suchana, Syed Toukir Ahmed Noor, Md. Rafil Tazir Shah, Ahmad Kabir, Mohammad Romel Bhuia",
+        "authorship": "unclassified",
+        "journal": "BMC Pediatrics",
+        "year": 2026,
+        "doi": "10.1186/s12887-026-06526-x",
+        "url": "https://doi.org/10.1186/s12887-026-06526-x"
     },
     {
-        title: 'Assessing changes in the availability and readiness of health facilities to provide modern family planning services in Bangladesh: Insights from Bangladesh Health Facility Surveys, 2014 and 2017',
-        authors: 'Banik R, <strong>Noor STA</strong>, Siddique AB, Mayen MSA, Saha A, Ashiquzzaman, Hossain L, Sayeed A, Saha N, Al-Zubayer MA, Kader ML, Akter E, Siddique MAB, Ahmed A, & Raza S',
-        authorship: 'co-author',
-        journal: 'PLoS One',
-        year: 2025,
-        doi: '10.1371/journal.pone.0334520',
-        url: 'https://doi.org/10.1371/journal.pone.0334520'
+        "title": "Association between Ambient Temperature and Common Mental Health Symptoms among Reproductive-Aged Women in Bangladesh: A Nationally Representative Study Using GPS-Linked Climate Data",
+        "authors": "Syed Toukir Ahmed Noor, Samin Yeasar, Raisha Binte Islam",
+        "authorship": "unclassified",
+        "journal": "",
+        "year": 2026,
+        "doi": "10.2139/ssrn.6976615",
+        "url": "https://doi.org/10.2139/ssrn.6976615"
     },
     {
-        title: "Assessing health systems' capacities to provide post-abortion care: insights from seven low- and middle-income countries",
-        authors: 'Raza S, Banik R, <strong>Noor STA</strong>, Jahan E, Sayeed A, Huq N, El Arifeen S, Ahmed A, & Rahman AE',
-        authorship: 'co-author',
-        journal: 'Journal of Global Health',
-        year: 2025,
-        doi: '10.7189/jogh.15.04020',
-        url: 'https://doi.org/10.7189/jogh.15.04020'
+        "title": "Trends And Socioeconomic Inequality in Maternal and Child Health Service Coverage in Bangladesh, 1993–2022",
+        "authors": "Md. Mayin uddin Hasan, Syed Toukir Ahmed Noor, Saifur R. Chowdhury, Mohiuddin Ahsanul Kabir Chowdhury, Tuhin Biswas",
+        "authorship": "unclassified",
+        "journal": "",
+        "year": 2026,
+        "doi": "10.2139/ssrn.7497812",
+        "url": "https://doi.org/10.2139/ssrn.7497812"
     },
     {
-        title: 'The proper application of logistic regression model in complex survey data: a systematic review',
-        authors: 'Dey D, Haque MS, Islam MM, Aishi UI, Shammy SS, Mayen MSA, <strong>Noor STA</strong>, & Uddin MJ',
-        authorship: 'co-author',
-        journal: 'BMC Medical Research Methodology',
-        year: 2025,
-        doi: '10.1186/s12874-024-02454-5',
-        url: 'https://doi.org/10.1186/s12874-024-02454-5'
+        "title": "Machine learning-based prediction of maternal continuum of care completion: Evidence from Bangladesh Demographic and Health Survey 2022",
+        "authors": "<strong>Noor STA</strong>, Islam RB, Yeasar S, & Siddique S",
+        "authorship": "first-author",
+        "journal": "Array",
+        "year": 2025,
+        "doi": "10.1016/j.array.2025.100666",
+        "url": "https://doi.org/10.1016/j.array.2025.100666"
     },
     {
-        title: 'Anxiety and depression among reproductive-aged women in Bangladesh: burden, determinants, and care-seeking practices based on a nationally representative demographic and health survey',
-        authors: 'Raza S, Banik R, <strong>Noor STA</strong>, Sayeed A, Saha A, Jahan E, Ashiquzzaman, Siddique MAB, Ahmed A, & Rahman AE',
-        authorship: 'co-author',
-        journal: "Archives of Women's Mental Health",
-        year: 2025,
-        doi: '10.1007/s00737-025-01564-3',
-        url: 'https://doi.org/10.1007/s00737-025-01564-3'
+        "title": "Prevalence, Determinants and Wealth-Related Inequality of Anxiety and Depression Symptoms Among Reproductive-Aged Women (15-49 Years) in Nepal: An Analysis of Nationally Representative Nepal Demographic and Health Survey Data 2022",
+        "authors": "<strong>Noor STA</strong>, Yeasar S, Siddique S, Banik R, & Raza S",
+        "authorship": "first-author",
+        "journal": "Depression and Anxiety",
+        "year": 2025,
+        "doi": "10.1155/da/9942669",
+        "url": "https://doi.org/10.1155/da/9942669"
     },
     {
-        title: 'Association between Global Monkeypox Cases and Meteorological Factors',
-        authors: 'Islam MA, Sangkham S, Tiwari A, Vadiati M, Hasan MN, <strong>Noor STA</strong>, Mumin J, Bhattacharya P, & Sherchan SP',
-        authorship: 'co-author',
-        journal: 'International Journal of Environmental Research and Public Health',
-        year: 2022,
-        doi: '10.3390/ijerph192315638',
-        url: 'https://doi.org/10.3390/ijerph192315638'
+        "title": "Determinants of Multimorbidity in a Low-resource Setting: A Population-based Cross-sectional Study in Bangladesh",
+        "authors": "<strong>Noor STA</strong>, Kawsar LA, & Bhuia MR",
+        "authorship": "first-author",
+        "journal": "Global Health, Epidemiology and Genomics",
+        "year": 2025,
+        "doi": "10.1155/ghe3/2909466",
+        "url": "https://doi.org/10.1155/ghe3/2909466"
     },
     {
-        title: 'Validation of modified COVID-19 Phobia Scale (MC19P-SE) to examine the relationships between corona anxiety and COVID-19 symptoms: A case-control study',
-        authors: 'Kawsar LA, <strong>Noor STA</strong>, Islam MA, & Bhuia MR',
-        authorship: 'co-author',
-        journal: 'Journal of Mood & Anxiety Disorders',
-        year: 2025,
-        doi: '10.1016/j.xjmad.2025.100108',
-        url: 'https://doi.org/10.1016/j.xjmad.2025.100108'
+        "title": "The association of cyberbullying with major depressive disorders among Bangladeshi female adolescents: findings from the Bangladesh adolescent health and wellbeing survey 2019-20",
+        "authors": "<strong>Noor STA</strong>, Islam MF, Hossain MS, Islam RB, Banik R, Shiblee SI, Nasrullah SM, & Raza S",
+        "authorship": "first-author",
+        "journal": "BMC Psychiatry",
+        "year": 2025,
+        "doi": "10.1186/s12888-025-07234-z",
+        "url": "https://doi.org/10.1186/s12888-025-07234-z"
     },
     {
-        title: 'An Estimation of Five-decade Long Monkeypox Case Fatality Rate: Systematic Review and Meta-analysis',
-        authors: 'Islam MA, Ahammed T, <strong>Noor STA</strong>, Hasan MN, Hoque MN, Tiwari A, Harapan H, Dhama K, Islam T, & Bhattacharya P',
-        authorship: 'co-author',
-        journal: 'Journal of Pure and Applied Microbiology',
-        year: 2022,
-        doi: '10.22207/JPAM.16.SPL1.16',
-        url: 'https://doi.org/10.22207/JPAM.16.SPL1.16'
-    },
-
-    // ── GBD Collaborations ───────────────────────────────────────────────────
-    {
-        title: 'Global, regional, and national prevalence of child and adolescent overweight and obesity, 1990-2021, with forecasts to 2050: a forecasting study for the Global Burden of Disease Study 2021',
-        authors: 'GBD 2021 Adolescent BMI Collaborators',
-        authorship: 'gbd',
-        journal: 'The Lancet',
-        year: 2025,
-        doi: '10.1016/S0140-6736(25)00397-6',
-        url: 'https://doi.org/10.1016/S0140-6736(25)00397-6'
+        "title": "Exploring mental health disparities in Mozambique: Depression and anxiety symptoms among reproductive-aged women using data from Mozambique Demographic and Health Survey 2022-23",
+        "authors": "<strong>Noor STA</strong>, Siddique S, Das O, Yeasar S, & Islam RB",
+        "authorship": "first-author",
+        "journal": "Global Epidemiology",
+        "year": 2025,
+        "doi": "10.1016/j.gloepi.2025.100223",
+        "url": "https://doi.org/10.1016/j.gloepi.2025.100223"
     },
     {
-        title: 'Global, regional, and national prevalence of adult overweight and obesity, 1990-2021, with forecasts to 2050: a forecasting study for the Global Burden of Disease Study 2021',
-        authors: 'GBD 2021 Adult BMI Collaborators',
-        authorship: 'gbd',
-        journal: 'The Lancet',
-        year: 2025,
-        doi: '10.1016/S0140-6736(25)00355-1',
-        url: 'https://doi.org/10.1016/S0140-6736(25)00355-1'
+        "title": "Exploring Factors Influencing Wealth-Related Disparities in Institutional Delivery: A Decomposition Analysis Using Bangladesh Multiple Indicator Cluster Survey (MICS) 2019",
+        "authors": "<strong>Noor STA</strong>, Shil P, Talukdar A, Aktar S, & Uddin MJ",
+        "authorship": "first-author",
+        "journal": "Public Health Challenges",
+        "year": 2025,
+        "doi": "10.1002/puh2.70066",
+        "url": "https://doi.org/10.1002/puh2.70066"
     },
     {
-        title: 'The global, regional, and national burden of cancer, 1990-2023, with forecasts to 2050: a systematic analysis for the Global Burden of Disease Study 2023',
-        authors: 'GBD 2023 Cancer Collaborators',
-        authorship: 'gbd',
-        journal: 'The Lancet',
-        year: 2025,
-        doi: '10.1016/S0140-6736(25)01635-6',
-        url: 'https://doi.org/10.1016/S0140-6736(25)01635-6'
+        "title": "Assessing changes in the availability and readiness of health facilities to provide modern family planning services in Bangladesh: Insights from Bangladesh Health Facility Surveys, 2014 and 2017",
+        "authors": "Banik R, <strong>Noor STA</strong>, Siddique AB, Mayen MSA, Saha A, Ashiquzzaman, Hossain L, Sayeed A, Saha N, Al-Zubayer MA, Kader ML, Akter E, Siddique MAB, Ahmed A, & Raza S",
+        "authorship": "co-author",
+        "journal": "PLoS One",
+        "year": 2025,
+        "doi": "10.1371/journal.pone.0334520",
+        "url": "https://doi.org/10.1371/journal.pone.0334520"
     },
     {
-        title: 'Global, regional, and national trends in routine childhood vaccination coverage from 1980 to 2023 with forecasts to 2030: a systematic analysis for the Global Burden of Disease Study 2023',
-        authors: 'GBD 2023 Vaccine Coverage Collaborators',
-        authorship: 'gbd',
-        journal: 'The Lancet',
-        year: 2025,
-        doi: '10.1016/S0140-6736(25)01037-2',
-        url: 'https://doi.org/10.1016/S0140-6736(25)01037-2'
+        "title": "Assessing health systems' capacities to provide post-abortion care: insights from seven low- and middle-income countries",
+        "authors": "Raza S, Banik R, <strong>Noor STA</strong>, Jahan E, Sayeed A, Huq N, El Arifeen S, Ahmed A, & Rahman AE",
+        "authorship": "co-author",
+        "journal": "Journal of Global Health",
+        "year": 2025,
+        "doi": "10.7189/jogh.15.04020",
+        "url": "https://doi.org/10.7189/jogh.15.04020"
     },
     {
-        title: 'Burden of disease scenarios by state in the USA, 2022-50: a forecasting analysis for the Global Burden of Disease Study 2021',
-        authors: 'GBD 2021 US Burden of Disease and Forecasting Collaborators',
-        authorship: 'gbd',
-        journal: 'The Lancet',
-        year: 2024,
-        doi: '10.1016/S0140-6736(24)02246-3',
-        url: 'https://doi.org/10.1016/S0140-6736(24)02246-3'
+        "title": "The proper application of logistic regression model in complex survey data: a systematic review",
+        "authors": "Dey D, Haque MS, Islam MM, Aishi UI, Shammy SS, Mayen MSA, <strong>Noor STA</strong>, & Uddin MJ",
+        "authorship": "co-author",
+        "journal": "BMC Medical Research Methodology",
+        "year": 2025,
+        "doi": "10.1186/s12874-024-02454-5",
+        "url": "https://doi.org/10.1186/s12874-024-02454-5"
     },
     {
-        title: 'Global burden of vision impairment due to age-related macular degeneration, 1990-2021, with forecasts to 2050: a systematic analysis for the Global Burden of Disease Study 2021',
-        authors: 'GBD 2021 Global AMD Collaborators',
-        authorship: 'gbd',
-        journal: 'The Lancet Global Health',
-        year: 2025,
-        doi: '10.1016/S2214-109X(25)00143-3',
-        url: 'https://doi.org/10.1016/S2214-109X(25)00143-3'
+        "title": "Anxiety and depression among reproductive-aged women in Bangladesh: burden, determinants, and care-seeking practices based on a nationally representative demographic and health survey",
+        "authors": "Raza S, Banik R, <strong>Noor STA</strong>, Sayeed A, Saha A, Jahan E, Ashiquzzaman, Siddique MAB, Ahmed A, & Rahman AE",
+        "authorship": "co-author",
+        "journal": "Archives of Women's Mental Health",
+        "year": 2025,
+        "doi": "10.1007/s00737-025-01564-3",
+        "url": "https://doi.org/10.1007/s00737-025-01564-3"
     },
     {
-        title: 'Global, regional, and national sepsis incidence and mortality, 1990-2021: a systematic analysis',
-        authors: 'GBD 2021 Global Sepsis Collaborators',
-        authorship: 'gbd',
-        journal: 'The Lancet Global Health',
-        year: 2025,
-        doi: '10.1016/S2214-109X(25)00356-0',
-        url: 'https://doi.org/10.1016/S2214-109X(25)00356-0'
+        "title": "Validation of modified COVID-19 Phobia Scale (MC19P-SE) to examine the relationships between corona anxiety and COVID-19 symptoms: A case-control study",
+        "authors": "Kawsar LA, <strong>Noor STA</strong>, Islam MA, & Bhuia MR",
+        "authorship": "co-author",
+        "journal": "Journal of Mood & Anxiety Disorders",
+        "year": 2025,
+        "doi": "10.1016/j.xjmad.2025.100108",
+        "url": "https://doi.org/10.1016/j.xjmad.2025.100108"
     },
     {
-        title: 'Global burden of 292 causes of death in 204 countries and territories and 660 subnational locations, 1990-2023: a systematic analysis for the Global Burden of Disease Study 2023',
-        authors: 'GBD 2023 Causes of Death Collaborators',
-        authorship: 'gbd',
-        journal: 'The Lancet',
-        year: 2025,
-        doi: '10.1016/S0140-6736(25)01917-8',
-        url: 'https://doi.org/10.1016/S0140-6736(25)01917-8'
+        "title": "Global, regional, and national prevalence of child and adolescent overweight and obesity, 1990-2021, with forecasts to 2050: a forecasting study for the Global Burden of Disease Study 2021",
+        "authors": "GBD 2021 Adolescent BMI Collaborators",
+        "authorship": "gbd",
+        "journal": "The Lancet",
+        "year": 2025,
+        "doi": "10.1016/S0140-6736(25)00397-6",
+        "url": "https://doi.org/10.1016/S0140-6736(25)00397-6"
     },
     {
-        title: 'Global age-sex-specific all-cause mortality and life expectancy estimates for 204 countries and territories and 660 subnational locations, 1950-2023: a demographic analysis for the Global Burden of Disease Study 2023',
-        authors: 'GBD 2023 Demographics Collaborators',
-        authorship: 'gbd',
-        journal: 'The Lancet',
-        year: 2025,
-        doi: '10.1016/S0140-6736(25)01330-3',
-        url: 'https://doi.org/10.1016/S0140-6736(25)01330-3'
+        "title": "Global, regional, and national prevalence of adult overweight and obesity, 1990-2021, with forecasts to 2050: a forecasting study for the Global Burden of Disease Study 2021",
+        "authors": "GBD 2021 Adult BMI Collaborators",
+        "authorship": "gbd",
+        "journal": "The Lancet",
+        "year": 2025,
+        "doi": "10.1016/S0140-6736(25)00355-1",
+        "url": "https://doi.org/10.1016/S0140-6736(25)00355-1"
     },
     {
-        title: 'Burden of 375 diseases and injuries, risk-attributable burden of 88 risk factors, and healthy life expectancy in 204 countries and territories, including 660 subnational locations, 1990-2023: a systematic analysis for the Global Burden of Disease Study 2023',
-        authors: 'GBD 2023 Disease and Injury and Risk Factor Collaborators',
-        authorship: 'gbd',
-        journal: 'The Lancet',
-        year: 2025,
-        doi: '10.1016/S0140-6736(25)01637-X',
-        url: 'https://doi.org/10.1016/S0140-6736(25)01637-X'
+        "title": "The global, regional, and national burden of cancer, 1990-2023, with forecasts to 2050: a systematic analysis for the Global Burden of Disease Study 2023",
+        "authors": "GBD 2023 Cancer Collaborators",
+        "authorship": "gbd",
+        "journal": "The Lancet",
+        "year": 2025,
+        "doi": "10.1016/S0140-6736(25)01635-6",
+        "url": "https://doi.org/10.1016/S0140-6736(25)01635-6"
     },
     {
-        title: 'Asthma and Atopic Dermatitis in Asia, 1990-2021: The Global Burden of Disease Study 2021',
-        authors: 'GBD 2021 Asia Allergic Disorders Collaborators',
-        authorship: 'gbd',
-        journal: 'Clinical & Experimental Allergy',
-        year: 2025,
-        doi: '10.1111/cea.70024',
-        url: 'https://doi.org/10.1111/cea.70024'
+        "title": "Global, regional, and national trends in routine childhood vaccination coverage from 1980 to 2023 with forecasts to 2030: a systematic analysis for the Global Burden of Disease Study 2023",
+        "authors": "GBD 2023 Vaccine Coverage Collaborators",
+        "authorship": "gbd",
+        "journal": "The Lancet",
+        "year": 2025,
+        "doi": "10.1016/S0140-6736(25)01037-2",
+        "url": "https://doi.org/10.1016/S0140-6736(25)01037-2"
     },
     {
-        title: 'Global, regional and national burden of dietary iron deficiency from 1990 to 2021: a Global Burden of Disease study',
-        authors: 'Lee S, Son Y, Hwang J, Kim MS; GBD 2021 Dietary Iron Deficiency Collaborators; Il Shin J, Yon DK, & Kassebaum NJ',
-        authorship: 'gbd',
-        journal: 'Nature Medicine',
-        year: 2025,
-        doi: '10.1038/s41591-025-03624-8',
-        url: 'https://doi.org/10.1038/s41591-025-03624-8'
+        "title": "Global burden of vision impairment due to age-related macular degeneration, 1990-2021, with forecasts to 2050: a systematic analysis for the Global Burden of Disease Study 2021",
+        "authors": "GBD 2021 Global AMD Collaborators",
+        "authorship": "gbd",
+        "journal": "The Lancet Global Health",
+        "year": 2025,
+        "doi": "10.1016/S2214-109X(25)00143-3",
+        "url": "https://doi.org/10.1016/S2214-109X(25)00143-3"
     },
     {
-        title: 'Global, regional, and national burden of asthma and atopic dermatitis, 1990-2021, and projections to 2050: a systematic analysis of the Global Burden of Disease Study 2021',
-        authors: 'GBD 2021 Asthma and Allergic Diseases Collaborators',
-        authorship: 'gbd',
-        journal: 'The Lancet Respiratory Medicine',
-        year: 2025,
-        doi: '10.1016/S2213-2600(25)00003-7',
-        url: 'https://doi.org/10.1016/S2213-2600(25)00003-7'
+        "title": "Global, regional, and national sepsis incidence and mortality, 1990-2021: a systematic analysis",
+        "authors": "GBD 2021 Global Sepsis Collaborators",
+        "authorship": "gbd",
+        "journal": "The Lancet Global Health",
+        "year": 2025,
+        "doi": "10.1016/S2214-109X(25)00356-0",
+        "url": "https://doi.org/10.1016/S2214-109X(25)00356-0"
     },
     {
-        title: 'Global, regional, and national burden of household air pollution, 1990-2021: a systematic analysis for the Global Burden of Disease Study 2021',
-        authors: 'GBD 2021 HAP Collaborators',
-        authorship: 'gbd',
-        journal: 'The Lancet',
-        year: 2025,
-        doi: '10.1016/S0140-6736(24)02840-X',
-        url: 'https://doi.org/10.1016/S0140-6736(24)02840-X'
+        "title": "Global burden of 292 causes of death in 204 countries and territories and 660 subnational locations, 1990-2023: a systematic analysis for the Global Burden of Disease Study 2023",
+        "authors": "GBD 2023 Causes of Death Collaborators",
+        "authorship": "gbd",
+        "journal": "The Lancet",
+        "year": 2025,
+        "doi": "10.1016/S0140-6736(25)01917-8",
+        "url": "https://doi.org/10.1016/S0140-6736(25)01917-8"
     },
     {
-        title: 'Changing life expectancy in European countries 1990-2021: a subanalysis of causes and risk factors from the Global Burden of Disease Study 2021',
-        authors: 'GBD 2021 Europe Life Expectancy Collaborators',
-        authorship: 'gbd',
-        journal: 'The Lancet Public Health',
-        year: 2025,
-        doi: '10.1016/S2468-2667(25)00009-X',
-        url: 'https://doi.org/10.1016/S2468-2667(25)00009-X'
+        "title": "Global age-sex-specific all-cause mortality and life expectancy estimates for 204 countries and territories and 660 subnational locations, 1950-2023: a demographic analysis for the Global Burden of Disease Study 2023",
+        "authors": "GBD 2023 Demographics Collaborators",
+        "authorship": "gbd",
+        "journal": "The Lancet",
+        "year": 2025,
+        "doi": "10.1016/S0140-6736(25)01330-3",
+        "url": "https://doi.org/10.1016/S0140-6736(25)01330-3"
     },
     {
-        title: 'Global, regional, and national age-sex-specific burden of diarrhoeal diseases, their risk factors, and aetiologies, 1990-2021, for 204 countries and territories: a systematic analysis for the Global Burden of Disease Study 2021',
-        authors: 'GBD 2021 Diarrhoeal Diseases Collaborators',
-        authorship: 'gbd',
-        journal: 'The Lancet Infectious Diseases',
-        year: 2025,
-        doi: '10.1016/S1473-3099(24)00691-1',
-        url: 'https://doi.org/10.1016/S1473-3099(24)00691-1'
+        "title": "Burden of 375 diseases and injuries, risk-attributable burden of 88 risk factors, and healthy life expectancy in 204 countries and territories, including 660 subnational locations, 1990-2023: a systematic analysis for the Global Burden of Disease Study 2023",
+        "authors": "GBD 2023 Disease and Injury and Risk Factor Collaborators",
+        "authorship": "gbd",
+        "journal": "The Lancet",
+        "year": 2025,
+        "doi": "10.1016/S0140-6736(25)01637-X",
+        "url": "https://doi.org/10.1016/S0140-6736(25)01637-X"
     },
     {
-        title: 'The burden of diseases, injuries, and risk factors by state in the USA, 1990-2021: a systematic analysis for the Global Burden of Disease Study 2021',
-        authors: 'GBD 2021 US Burden of Disease Collaborators',
-        authorship: 'gbd',
-        journal: 'The Lancet',
-        year: 2024,
-        doi: '10.1016/S0140-6736(24)01446-6',
-        url: 'https://doi.org/10.1016/S0140-6736(24)01446-6'
+        "title": "Asthma and Atopic Dermatitis in Asia, 1990-2021: The Global Burden of Disease Study 2021",
+        "authors": "GBD 2021 Asia Allergic Disorders Collaborators",
+        "authorship": "gbd",
+        "journal": "Clinical & Experimental Allergy",
+        "year": 2025,
+        "doi": "10.1111/cea.70024",
+        "url": "https://doi.org/10.1111/cea.70024"
     },
     {
-        title: 'Global, regional, and national burden of HIV/AIDS, 1990-2021, and forecasts to 2050, for 204 countries and territories: the Global Burden of Disease Study 2021',
-        authors: 'GBD 2021 HIV Collaborators',
-        authorship: 'gbd',
-        journal: 'The Lancet HIV',
-        year: 2024,
-        doi: '10.1016/S2352-3018(24)00212-1',
-        url: 'https://doi.org/10.1016/S2352-3018(24)00212-1'
+        "title": "Global, regional and national burden of dietary iron deficiency from 1990 to 2021: a Global Burden of Disease study",
+        "authors": "Lee S, Son Y, Hwang J, Kim MS; GBD 2021 Dietary Iron Deficiency Collaborators; Il Shin J, Yon DK, & Kassebaum NJ",
+        "authorship": "gbd",
+        "journal": "Nature Medicine",
+        "year": 2025,
+        "doi": "10.1038/s41591-025-03624-8",
+        "url": "https://doi.org/10.1038/s41591-025-03624-8"
     },
     {
-        title: 'National-level and state-level prevalence of overweight and obesity among children, adolescents, and adults in the USA, 1990-2021, and forecasts up to 2050',
-        authors: 'GBD 2021 US Obesity Forecasting Collaborators',
-        authorship: 'gbd',
-        journal: 'The Lancet',
-        year: 2024,
-        doi: '10.1016/S0140-6736(24)01548-4',
-        url: 'https://doi.org/10.1016/S0140-6736(24)01548-4'
+        "title": "Global, regional, and national burden of asthma and atopic dermatitis, 1990-2021, and projections to 2050: a systematic analysis of the Global Burden of Disease Study 2021",
+        "authors": "GBD 2021 Asthma and Allergic Diseases Collaborators",
+        "authorship": "gbd",
+        "journal": "The Lancet Respiratory Medicine",
+        "year": 2025,
+        "doi": "10.1016/S2213-2600(25)00003-7",
+        "url": "https://doi.org/10.1016/S2213-2600(25)00003-7"
     },
     {
-        title: 'Forecasting the effects of smoking prevalence scenarios on years of life lost and life expectancy from 2022 to 2050: a systematic analysis for the Global Burden of Disease Study 2021',
-        authors: 'GBD 2021 Tobacco Forecasting Collaborators',
-        authorship: 'gbd',
-        journal: 'The Lancet Public Health',
-        year: 2024,
-        doi: '10.1016/S2468-2667(24)00166-X',
-        url: 'https://doi.org/10.1016/S2468-2667(24)00166-X'
+        "title": "Global, regional, and national burden of household air pollution, 1990-2021: a systematic analysis for the Global Burden of Disease Study 2021",
+        "authors": "GBD 2021 HAP Collaborators",
+        "authorship": "gbd",
+        "journal": "The Lancet",
+        "year": 2025,
+        "doi": "10.1016/S0140-6736(24)02840-X",
+        "url": "https://doi.org/10.1016/S0140-6736(24)02840-X"
     },
     {
-        title: 'Global, regional, and national burden of stroke and its risk factors, 1990-2021: a systematic analysis for the Global Burden of Disease Study 2021',
-        authors: 'GBD 2021 Stroke Risk Factor Collaborators',
-        authorship: 'gbd',
-        journal: 'The Lancet Neurology',
-        year: 2024,
-        doi: '10.1016/S1474-4422(24)00369-7',
-        url: 'https://doi.org/10.1016/S1474-4422(24)00369-7'
+        "title": "Changing life expectancy in European countries 1990-2021: a subanalysis of causes and risk factors from the Global Burden of Disease Study 2021",
+        "authors": "GBD 2021 Europe Life Expectancy Collaborators",
+        "authorship": "gbd",
+        "journal": "The Lancet Public Health",
+        "year": 2025,
+        "doi": "10.1016/S2468-2667(25)00009-X",
+        "url": "https://doi.org/10.1016/S2468-2667(25)00009-X"
     },
     {
-        title: 'Burden of disease scenarios for 204 countries and territories, 2022-2050: a forecasting analysis for the Global Burden of Disease Study 2021',
-        authors: 'GBD 2021 Forecasting Collaborators',
-        authorship: 'gbd',
-        journal: 'The Lancet',
-        year: 2024,
-        doi: '10.1016/S0140-6736(24)00685-8',
-        url: 'https://doi.org/10.1016/S0140-6736(24)00685-8'
+        "title": "Global, regional, and national age-sex-specific burden of diarrhoeal diseases, their risk factors, and aetiologies, 1990-2021, for 204 countries and territories: a systematic analysis for the Global Burden of Disease Study 2021",
+        "authors": "GBD 2021 Diarrhoeal Diseases Collaborators",
+        "authorship": "gbd",
+        "journal": "The Lancet Infectious Diseases",
+        "year": 2025,
+        "doi": "10.1016/S1473-3099(24)00691-1",
+        "url": "https://doi.org/10.1016/S1473-3099(24)00691-1"
+    },
+    {
+        "title": "National and Subnational Level Estimates of Maternal Delivery at Home and Their Predictors in Bangladesh: Evidence from Population-Based Survey 2012-2022",
+        "authors": "Raisha Binte Islam, Md. Lutful Kader, Somaya Mostarin, Mushfika Binta Latif, Amina Anjum, Syed Toukir Ahmed Noor",
+        "authorship": "unclassified",
+        "journal": "",
+        "year": 2025,
+        "doi": "10.1101/2025.07.05.25330941",
+        "url": "https://doi.org/10.1101/2025.07.05.25330941"
+    },
+    {
+        "title": "Prevalence, Determinants, and Care-Seeking Behaviour for Major Depressive Disorder in the Lesotho Population: A Multilevel Analysis from the Lesotho Demographic and Health Survey 2023-24",
+        "authors": "Noor, S.T.A., Siddique, S., Yeasar, S., Das, O., Tanvir, S.-U.-A., Islam, R.B.",
+        "authorship": "unclassified",
+        "journal": "Research Square",
+        "year": 2025,
+        "doi": "10.21203/rs.3.rs-6945317/v1",
+        "url": "https://doi.org/10.21203/rs.3.rs-6945317/v1"
+    },
+    {
+        "title": "Burden of disease scenarios by state in the USA, 2022-50: a forecasting analysis for the Global Burden of Disease Study 2021",
+        "authors": "GBD 2021 US Burden of Disease and Forecasting Collaborators",
+        "authorship": "gbd",
+        "journal": "The Lancet",
+        "year": 2024,
+        "doi": "10.1016/S0140-6736(24)02246-3",
+        "url": "https://doi.org/10.1016/S0140-6736(24)02246-3"
+    },
+    {
+        "title": "The burden of diseases, injuries, and risk factors by state in the USA, 1990-2021: a systematic analysis for the Global Burden of Disease Study 2021",
+        "authors": "GBD 2021 US Burden of Disease Collaborators",
+        "authorship": "gbd",
+        "journal": "The Lancet",
+        "year": 2024,
+        "doi": "10.1016/S0140-6736(24)01446-6",
+        "url": "https://doi.org/10.1016/S0140-6736(24)01446-6"
+    },
+    {
+        "title": "Global, regional, and national burden of HIV/AIDS, 1990-2021, and forecasts to 2050, for 204 countries and territories: the Global Burden of Disease Study 2021",
+        "authors": "GBD 2021 HIV Collaborators",
+        "authorship": "gbd",
+        "journal": "The Lancet HIV",
+        "year": 2024,
+        "doi": "10.1016/S2352-3018(24)00212-1",
+        "url": "https://doi.org/10.1016/S2352-3018(24)00212-1"
+    },
+    {
+        "title": "National-level and state-level prevalence of overweight and obesity among children, adolescents, and adults in the USA, 1990-2021, and forecasts up to 2050",
+        "authors": "GBD 2021 US Obesity Forecasting Collaborators",
+        "authorship": "gbd",
+        "journal": "The Lancet",
+        "year": 2024,
+        "doi": "10.1016/S0140-6736(24)01548-4",
+        "url": "https://doi.org/10.1016/S0140-6736(24)01548-4"
+    },
+    {
+        "title": "Forecasting the effects of smoking prevalence scenarios on years of life lost and life expectancy from 2022 to 2050: a systematic analysis for the Global Burden of Disease Study 2021",
+        "authors": "GBD 2021 Tobacco Forecasting Collaborators",
+        "authorship": "gbd",
+        "journal": "The Lancet Public Health",
+        "year": 2024,
+        "doi": "10.1016/S2468-2667(24)00166-X",
+        "url": "https://doi.org/10.1016/S2468-2667(24)00166-X"
+    },
+    {
+        "title": "Global, regional, and national burden of stroke and its risk factors, 1990-2021: a systematic analysis for the Global Burden of Disease Study 2021",
+        "authors": "GBD 2021 Stroke Risk Factor Collaborators",
+        "authorship": "gbd",
+        "journal": "The Lancet Neurology",
+        "year": 2024,
+        "doi": "10.1016/S1474-4422(24)00369-7",
+        "url": "https://doi.org/10.1016/S1474-4422(24)00369-7"
+    },
+    {
+        "title": "Burden of disease scenarios for 204 countries and territories, 2022-2050: a forecasting analysis for the Global Burden of Disease Study 2021",
+        "authors": "GBD 2021 Forecasting Collaborators",
+        "authorship": "gbd",
+        "journal": "The Lancet",
+        "year": 2024,
+        "doi": "10.1016/S0140-6736(24)00685-8",
+        "url": "https://doi.org/10.1016/S0140-6736(24)00685-8"
+    },
+    {
+        "title": "Association between Global Monkeypox Cases and Meteorological Factors",
+        "authors": "Islam MA, Sangkham S, Tiwari A, Vadiati M, Hasan MN, <strong>Noor STA</strong>, Mumin J, Bhattacharya P, & Sherchan SP",
+        "authorship": "co-author",
+        "journal": "International Journal of Environmental Research and Public Health",
+        "year": 2022,
+        "doi": "10.3390/ijerph192315638",
+        "url": "https://doi.org/10.3390/ijerph192315638"
+    },
+    {
+        "title": "An Estimation of Five-decade Long Monkeypox Case Fatality Rate: Systematic Review and Meta-analysis",
+        "authors": "Islam MA, Ahammed T, <strong>Noor STA</strong>, Hasan MN, Hoque MN, Tiwari A, Harapan H, Dhama K, Islam T, & Bhattacharya P",
+        "authorship": "co-author",
+        "journal": "Journal of Pure and Applied Microbiology",
+        "year": 2022,
+        "doi": "10.22207/JPAM.16.SPL1.16",
+        "url": "https://doi.org/10.22207/JPAM.16.SPL1.16"
+    },
+    {
+        "title": "Prevalence of Stunting and Associated Factors among under-5 children in Bangladesh: An Application of Multilevel Mixed-effects Logistic Regression Model.",
+        "authors": "Syed Toukir Ahmed Noor",
+        "authorship": "unclassified",
+        "journal": "Unpublished",
+        "year": 2022,
+        "doi": "10.13140/rg.2.2.14643.71208",
+        "url": "https://doi.org/10.13140/rg.2.2.14643.71208"
     }
 ];
 

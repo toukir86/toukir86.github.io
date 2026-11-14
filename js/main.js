@@ -180,6 +180,15 @@ const publicationData = [
         "url": "https://doi.org/10.2139/ssrn.7497812"
     },
     {
+        "title": "Sex‐Specific Determinants of Noncommunicable Diseases Among Respondents From Wealthier Households in Bangladesh",
+        "authors": "Sourav Roy, Raisha Binte Islam, Syed Toukir Ahmed Noor, Shuvongkar Sarkar, Md. Ismail Hossain",
+        "authorship": "unclassified",
+        "journal": "Public Health Challenges",
+        "year": 2026,
+        "doi": "10.1002/puh2.70461",
+        "url": "https://doi.org/10.1002/puh2.70461"
+    },
+    {
         "title": "Machine learning-based prediction of maternal continuum of care completion: Evidence from Bangladesh Demographic and Health Survey 2022",
         "authors": "<strong>Noor STA</strong>, Islam RB, Yeasar S, & Siddique S",
         "authorship": "first-author",

@@ -189,6 +189,15 @@ const publicationData = [
         "url": "https://doi.org/10.1002/puh2.70461"
     },
     {
+        "title": "Who is left behind and where: Spatial inequalities in healthcare access among women in Bangladesh",
+        "authors": "Syed Toukir Ahmed Noor, Raisha Binte Islam, Md. Shihab Mostafa, Shorful Alam, Abdullah Al Islam",
+        "authorship": "unclassified",
+        "journal": "BMC Public Health",
+        "year": 2026,
+        "doi": "10.1186/s12889-026-30438-1",
+        "url": "https://doi.org/10.1186/s12889-026-30438-1"
+    },
+    {
         "title": "Machine learning-based prediction of maternal continuum of care completion: Evidence from Bangladesh Demographic and Health Survey 2022",
         "authors": "<strong>Noor STA</strong>, Islam RB, Yeasar S, & Siddique S",
         "authorship": "first-author",
